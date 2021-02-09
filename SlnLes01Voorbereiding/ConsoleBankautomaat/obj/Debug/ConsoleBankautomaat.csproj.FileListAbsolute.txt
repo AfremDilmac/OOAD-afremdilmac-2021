@@ -1,0 +1,7 @@
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes01Voorbereiding\ConsoleBankautomaat\bin\Debug\ConsoleBankautomaat.exe.config
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes01Voorbereiding\ConsoleBankautomaat\bin\Debug\ConsoleBankautomaat.exe
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes01Voorbereiding\ConsoleBankautomaat\bin\Debug\ConsoleBankautomaat.pdb
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes01Voorbereiding\ConsoleBankautomaat\obj\Debug\ConsoleBankautomaat.csprojAssemblyReference.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes01Voorbereiding\ConsoleBankautomaat\obj\Debug\ConsoleBankautomaat.csproj.CoreCompileInputs.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes01Voorbereiding\ConsoleBankautomaat\obj\Debug\ConsoleBankautomaat.exe
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes01Voorbereiding\ConsoleBankautomaat\obj\Debug\ConsoleBankautomaat.pdb
