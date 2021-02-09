@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleBankautomaat", "Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfChat", "WpfChat\WpfChat.csproj", "{6F9A0D8B-53B6-424B-BA39-E8CF80A2923B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAlcholol", "WpfAlcholol\WpfAlcholol.csproj", "{82892F2A-62A9-48F1-AAC4-BA666C187A75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6F9A0D8B-53B6-424B-BA39-E8CF80A2923B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F9A0D8B-53B6-424B-BA39-E8CF80A2923B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F9A0D8B-53B6-424B-BA39-E8CF80A2923B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82892F2A-62A9-48F1-AAC4-BA666C187A75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82892F2A-62A9-48F1-AAC4-BA666C187A75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82892F2A-62A9-48F1-AAC4-BA666C187A75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82892F2A-62A9-48F1-AAC4-BA666C187A75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
