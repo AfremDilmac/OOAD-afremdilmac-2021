@@ -24,5 +24,21 @@ namespace WpfChat
         {
             InitializeComponent();
         }
+
+        private void btnVerzenden_Click(object sender, RoutedEventArgs e)
+        {
+            
+            string a = boxBericht.Text;
+            string newLine = Environment.NewLine;
+            boxBericht.Text = a;
+            a = a.Replace("Fuck", "***").Replace("Dombo", "***").Replace("Gemeenerik", "***");
+           
+            string text = Convert.ToString($"{boxNaam.Text} says: \n {a}" + newLine);
+            blockChat.Text += text + newLine;
+
+            Convert.ToString(boxNaam.Text = "");
+            Convert.ToString(boxBericht.Text = "");
+
+        }
     }
 }

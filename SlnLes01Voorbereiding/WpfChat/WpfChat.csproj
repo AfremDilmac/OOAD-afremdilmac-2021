@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F280A273-B8EF-4124-A086-05EB9A81EE69}</ProjectGuid>
+    <ProjectGuid>{6F9A0D8B-53B6-424B-BA39-E8CF80A2923B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>WpfChat</RootNamespace>
     <AssemblyName>WpfChat</AssemblyName>
@@ -53,6 +53,7 @@
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
