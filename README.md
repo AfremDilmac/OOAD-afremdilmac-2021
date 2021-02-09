@@ -1,4 +1,4 @@
-# IIP-afremdilmac-2021
+# OOAD-afremdilmac-2021
 
 * Naam: Afrem Dilmac
 * Opleiding: 1e Bachelor toegepaste informatica
