@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfAlcohol.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAlcohol"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="83" Margin="56,89,0,0" VerticalAlignment="Top" Width="82" Source="bier.jpg"/>
+        <Label Content="Alcohol-gehalte" HorizontalAlignment="Left" Margin="56,32,0,0" VerticalAlignment="Top" Height="52" Width="138" FontSize="16" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="83" Margin="56,255,0,0" VerticalAlignment="Top" Width="82" Source="whisky.jpg"/>
+        <Image HorizontalAlignment="Left" Height="83" Margin="56,172,0,0" VerticalAlignment="Top" Width="82" Source="glaswijn.jpg"/>
+        <Slider x:Name="sldBier" HorizontalAlignment="Left" Margin="225,128,0,0" VerticalAlignment="Top" Width="321" ValueChanged="sldBier_ValueChanged" Maximum="5"/>
+        <Slider x:Name="sldWijn" HorizontalAlignment="Left" Margin="225,208,0,0" VerticalAlignment="Top" Width="321" ValueChanged="sldWijn_ValueChanged" Maximum="5"/>
+        <Slider x:Name="sldWhisky" HorizontalAlignment="Left" Margin="225,287,0,0" VerticalAlignment="Top" Width="321" ValueChanged="sldWhisky_ValueChanged" Maximum="5"/>
+        <Label x:Name="lblBier" Content="" HorizontalAlignment="Left" Margin="645,128,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblWijn" Content="" HorizontalAlignment="Left" Margin="645,208,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblWhisky" Content="" HorizontalAlignment="Left" Margin="645,287,0,0" VerticalAlignment="Top"/>
+        <Rectangle x:Name="rtlBalk" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="26" Margin="158,371,0,0" Stroke="Black" VerticalAlignment="Top" Width="74"/>
+        <Label Content="Alcohol-gehalte:" HorizontalAlignment="Left" Margin="56,371,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

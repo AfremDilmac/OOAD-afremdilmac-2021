@@ -15,7 +15,7 @@
         <TextBox x:Name="boxNaam" HorizontalAlignment="Left" Height="30" Margin="144,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292"/>
         <TextBox x:Name="boxBericht" HorizontalAlignment="Left" Height="157" Margin="144,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292"/>
         <Button x:Name="btnVerzenden" Content="VERZENDEN" HorizontalAlignment="Left" Margin="356,298,0,0" VerticalAlignment="Top" Width="80" Height="25" Click="btnVerzenden_Click"/>
-        <TextBlock x:Name="blockChat" HorizontalAlignment="Left" Height="341" Margin="511,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="271" Background="White" Padding="5,10,5,10"/>
+        <TextBlock x:Name="blockChat" HorizontalAlignment="Left" Height="341" Margin="495,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="271" Background="White" Padding="5,10,5,10"/>
 
     </Grid>
 </Window>
