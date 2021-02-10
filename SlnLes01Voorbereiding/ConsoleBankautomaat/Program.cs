@@ -17,7 +17,7 @@ namespace ConsoleBankautomaat
             string keuze;
 
             
-            //Loop pincode
+            //Loop pincode (pincode = 1111)
             do
             {
                 Console.WriteLine("Bankautomaat");
@@ -39,7 +39,7 @@ namespace ConsoleBankautomaat
             do
             {
                 //Keuze van operatie
-                Console.WriteLine("\n a.afhaling \n b. storting \n c. stoppen \n d. wachtwoord wijzigen \n je keuze: ");
+                Console.WriteLine("\n a.afhaling \n b. storting \n c. stoppen \n je keuze: ");
                 keuze = Convert.ToString(Console.ReadLine());
                 double nieuwesaldo;
 
@@ -79,6 +79,7 @@ namespace ConsoleBankautomaat
                 }
                 else
                 {
+                    Console.WriteLine("Fout invoer");
                     Console.WriteLine("\n Ongeldige keuze \n a.afhaling \n b. storting \n c. stoppen \n je keuze: ");
                     keuze = Convert.ToString(Console.ReadLine());
                 }
