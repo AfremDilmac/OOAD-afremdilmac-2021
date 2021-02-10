@@ -1,0 +1,15 @@
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes01Voorbereiding\WpfOxo\obj\Debug\WpfOxo.csprojAssemblyReference.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes01Voorbereiding\WpfOxo\obj\Debug\MainWindow.g.cs
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes01Voorbereiding\WpfOxo\obj\Debug\App.g.cs
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes01Voorbereiding\WpfOxo\obj\Debug\WpfOxo_MarkupCompile.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes01Voorbereiding\WpfOxo\obj\Debug\WpfOxo_MarkupCompile.lref
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes01Voorbereiding\WpfOxo\obj\Debug\MainWindow.baml
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes01Voorbereiding\WpfOxo\obj\Debug\WpfOxo.g.resources
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes01Voorbereiding\WpfOxo\obj\Debug\WpfOxo.Properties.Resources.resources
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes01Voorbereiding\WpfOxo\obj\Debug\WpfOxo.csproj.GenerateResource.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes01Voorbereiding\WpfOxo\obj\Debug\WpfOxo.csproj.CoreCompileInputs.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes01Voorbereiding\WpfOxo\obj\Debug\WpfOxo.pdb
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes01Voorbereiding\WpfOxo\bin\Debug\WpfOxo.exe.config
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes01Voorbereiding\WpfOxo\bin\Debug\WpfOxo.exe
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes01Voorbereiding\WpfOxo\bin\Debug\WpfOxo.pdb
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes01Voorbereiding\WpfOxo\obj\Debug\WpfOxo.exe

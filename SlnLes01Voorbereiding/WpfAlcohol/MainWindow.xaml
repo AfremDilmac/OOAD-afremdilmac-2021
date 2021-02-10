@@ -17,7 +17,7 @@
         <Label x:Name="lblBier" Content="" HorizontalAlignment="Left" Margin="645,128,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblWijn" Content="" HorizontalAlignment="Left" Margin="645,208,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblWhisky" Content="" HorizontalAlignment="Left" Margin="645,287,0,0" VerticalAlignment="Top"/>
-        <Rectangle x:Name="rtlBalk" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="26" Margin="158,371,0,0" Stroke="Black" VerticalAlignment="Top" Width="74"/>
+        <Rectangle x:Name="rtlBalk" Fill="#FF3AD102" HorizontalAlignment="Left" Height="26" Margin="158,371,0,0" Stroke="Black" VerticalAlignment="Top" Width="74"/>
         <Label Content="Alcohol-gehalte:" HorizontalAlignment="Left" Margin="56,371,0,0" VerticalAlignment="Top"/>
 
     </Grid>
