@@ -15,6 +15,7 @@ namespace ConsoleBankautomaat
             double saldo = 500;
             int pincode;
             string keuze;
+
             
             //Loop pincode
             do
@@ -29,53 +30,48 @@ namespace ConsoleBankautomaat
                 }
             } while (pincode != 1111);
 
-            //Keuze van operatie
-            Start:
-            Console.WriteLine("\n a.afhaling \n b. storting \n c. stoppen \n je keuze: ");
-            keuze = Convert.ToString(Console.ReadLine());
-            double nieuwesaldo;
+         
+
+
 
             //Operaties binnen een do while
             //u kunt altijd kiezen tot dat u c kiest om te stoppen
             do
             {
+                //Keuze van operatie
+                Console.WriteLine("\n a.afhaling \n b. storting \n c. stoppen \n d. wachtwoord wijzigen \n je keuze: ");
+                keuze = Convert.ToString(Console.ReadLine());
+                double nieuwesaldo;
+
+                //Hier kan men een bedrag afhalen
                 if (keuze == "a"  )
                 {
-                    Retry:
+
                     Console.WriteLine("Welk bedrag wil je afhalen: ");
                     double afhalen = Convert.ToDouble(Console.ReadLine());
                     nieuwesaldo = Convert.ToDouble(saldo - afhalen);
                     if (nieuwesaldo < 0)
                     {
                         Console.WriteLine("Fout! u kunt niet onder de saldo gaan");
-                        goto Retry;
+
                     }
                     else
                     {
                         saldo = nieuwesaldo;
                         Console.WriteLine($"Afhaling ok - het nieuwe saldo is {saldo}");
-                        goto Start;
+
                     }
                  
                 }
+                //Hier kan men een bedrag instorten
                 else if (keuze == "b")
                 {
-                Retry:
+ 
                     Console.WriteLine("Welk bedrag wil je storten: ");
                     double storten = Convert.ToDouble(Console.ReadLine());
                     nieuwesaldo = Convert.ToDouble(saldo + storten);
-                    if (nieuwesaldo < 0)
-                    {
-                        Console.WriteLine("Fout! u kunt niet onder de saldo gaan");
-                        goto Retry;
-                    }
-                    else
-                    {
-                        saldo = nieuwesaldo;
-                        Console.WriteLine($"Afhaling ok - het nieuwe saldo is {saldo}");
-                        goto Start;
-                    }
-
+                    saldo = nieuwesaldo;
+                    Console.WriteLine($"Afhaling ok - het nieuwe saldo is {saldo}");
                 }
                 else if (keuze == "c")
                 {

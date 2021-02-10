@@ -29,16 +29,21 @@ namespace WpfAlcohol
         private void sldBier_ValueChanged_1(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             lblBier.Content = Convert.ToString(Math.Round(sldBier.Value)) + " glazen";
+            rtlBalk.Width = 25 + (Math.Round(sldBier.Value) * 25) + (Math.Round(sldWhisky.Value) * 25) + (Math.Round(sldWijn.Value) * 25);
+
+
         }
 
         private void sldWijn_ValueChanged_1(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             lblWijn.Content = Convert.ToString(Math.Round(sldWijn.Value)) + " glazen";
+            rtlBalk.Width = 25 + (Math.Round(sldBier.Value) * 25) + (Math.Round(sldWhisky.Value) * 25) + (Math.Round(sldWijn.Value) * 25);
         }
 
         private void sldWhisky_ValueChanged_1(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             lblWhisky.Content = Convert.ToString(Math.Round(sldWhisky.Value)) + " glazen";
+            rtlBalk.Width = 25 + (Math.Round(sldBier.Value) * 25) + (Math.Round(sldWhisky.Value) * 25) + (Math.Round(sldWijn.Value) * 25);
         }
     }
 }
