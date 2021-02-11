@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A5BCE553-8094-46AE-9675-0CE683FFD16B}</ProjectGuid>
+    <ProjectGuid>{FF8CA61F-293C-4139-AD07-8EF37162D5BF}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>WpfBlackJack</RootNamespace>
     <AssemblyName>WpfBlackJack</AssemblyName>
@@ -95,13 +95,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="1D.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="back_purple.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="back_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="1C.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -13,26 +13,29 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfApp1
+namespace WpfBlackJack
 {
     /// <summary>
     /// Logique d'interaction pour MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+      
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Random number = new Random();
-            int playerKaart = number.Next(0, 14);
-
+            int playerKaart = number.Next(0, 2);
+ 
             if (playerKaart == 1 && playerKaart == 11)
             {
-                imgEen.Source = new BitmapImage(new Uri("1C.png", UriKind.Relative));
+                imgEen.Source = new BitmapImage(new Uri("EenC.png", UriKind.Relative));
+                
             }
             else if (playerKaart == 2)
             {
@@ -82,6 +85,9 @@ namespace WpfApp1
             {
                 imgEen.Source = new BitmapImage(new Uri("13D.png", UriKind.Relative));
             }
+
+           
+
         }
     }
 }

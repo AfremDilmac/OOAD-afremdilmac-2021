@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfFormChecking", "WpfFormC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfOxo", "WpfOxo\WpfOxo.csproj", "{7C1A9545-4946-4881-91F1-306F12882200}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfBlackJack", "WpfApp1\WpfBlackJack.csproj", "{A5BCE553-8094-46AE-9675-0CE683FFD16B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfBlackJack", "WpfBlackJack\WpfBlackJack.csproj", "{FF8CA61F-293C-4139-AD07-8EF37162D5BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{7C1A9545-4946-4881-91F1-306F12882200}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C1A9545-4946-4881-91F1-306F12882200}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C1A9545-4946-4881-91F1-306F12882200}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A5BCE553-8094-46AE-9675-0CE683FFD16B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A5BCE553-8094-46AE-9675-0CE683FFD16B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A5BCE553-8094-46AE-9675-0CE683FFD16B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A5BCE553-8094-46AE-9675-0CE683FFD16B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF8CA61F-293C-4139-AD07-8EF37162D5BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF8CA61F-293C-4139-AD07-8EF37162D5BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF8CA61F-293C-4139-AD07-8EF37162D5BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF8CA61F-293C-4139-AD07-8EF37162D5BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
