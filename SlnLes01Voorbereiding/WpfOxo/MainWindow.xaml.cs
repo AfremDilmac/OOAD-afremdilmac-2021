@@ -31,7 +31,7 @@ namespace WpfOxo
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            string o = "O";
 
             if (turn %2 == 0)
             {
