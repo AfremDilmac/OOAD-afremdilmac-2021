@@ -30,12 +30,67 @@ namespace WpfBlackJack
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Random number = new Random();
+            int playerKaart = number.Next(0, 14);
+            lblBank.Content = Convert.ToString(playerKaart);
+            switch (playerKaart)
+            {
+                case 1:
+                    imgEen.Source = new BitmapImage(new Uri("Images/1D.png", UriKind.Relative));
+                    break;
+                case 2:
+                    imgEen.Source = new BitmapImage(new Uri("Images/2D.png", UriKind.Relative));
+                    break;
+                case 3:
+                    imgEen.Source = new BitmapImage(new Uri("3C.png", UriKind.Relative));
+                    break;
+                case 4:
+                    imgEen.Source = new BitmapImage(new Uri("4C.png", UriKind.Relative));
+                    break;
+                case 5:
+                    imgEen.Source = new BitmapImage(new Uri("5C.png", UriKind.Relative));
+                    break;
+                case 6:
+                    imgEen.Source = new BitmapImage(new Uri("6C.png", UriKind.Relative));
+                    break;
+                case 7:
+                    imgEen.Source = new BitmapImage(new Uri("7C.png", UriKind.Relative));
+                    break;
+                case 8:
+                    imgEen.Source = new BitmapImage(new Uri("8C.png", UriKind.Relative));
+                    break;
+                case 9:
+                    imgEen.Source = new BitmapImage(new Uri("9C.png", UriKind.Relative));
+                    break;
+                case 10:
+                    imgEen.Source = new BitmapImage(new Uri("10C.png", UriKind.Relative));
+                    break;
+                case 11:
+                    imgEen.Source = new BitmapImage(new Uri("11C.png", UriKind.Relative));
+                    break;
+                case 12:
+                    imgEen.Source = new BitmapImage(new Uri("12C.png", UriKind.Relative));
+                    break;
+                default:
+                    imgEen.Source = new BitmapImage(new Uri("13C.png", UriKind.Relative));
+                    break;
+
+                   
+            }
+       
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            
+
+            Random number = new Random();
             int playerKaart = number.Next(0, 2);
- 
-            if (playerKaart == 1 && playerKaart == 11)
+            int playerKaarts = 1;
+
+            if (playerKaarts == 1)
             {
                 imgEen.Source = new BitmapImage(new Uri("EenC.png", UriKind.Relative));
-                
+
             }
             else if (playerKaart == 2)
             {
@@ -85,8 +140,8 @@ namespace WpfBlackJack
             {
                 imgEen.Source = new BitmapImage(new Uri("13D.png", UriKind.Relative));
             }
-
-           
+         
+            lblnumber.Content = Convert.ToString(number);
 
         }
     }

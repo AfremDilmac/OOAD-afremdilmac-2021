@@ -22,8 +22,11 @@
         <Image x:Name="imgEen_Copy10" HorizontalAlignment="Left" Height="152" Margin="600,221,0,0" VerticalAlignment="Top" Width="100" Source="back_green.png"/>
         <Label Content="BANK " HorizontalAlignment="Left" Margin="79,6,0,0" VerticalAlignment="Top"/>
         <Label Content="YOU" HorizontalAlignment="Left" Margin="79,195,0,0" VerticalAlignment="Top"/>
-        <Button Content="HIT ME!" HorizontalAlignment="Left" Margin="565,378,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <Button Content="PLAY AGAIN" HorizontalAlignment="Left" Margin="433,378,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button x:Name="btnHit" Content="HIT ME!" HorizontalAlignment="Left" Margin="565,378,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button x:Name="btnPlayAgain" Content="PLAY AGAIN" HorizontalAlignment="Left" Margin="433,378,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <Image x:Name="imgTest" HorizontalAlignment="Left" Height="61" Margin="716,173,0,0" VerticalAlignment="Top" Width="50"/>
+        <Image HorizontalAlignment="Left" Height="84" Margin="716,137,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label x:Name="lblnumber" Content="" HorizontalAlignment="Left" Margin="117,195,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblBank" Content="" HorizontalAlignment="Left" Margin="128,11,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
