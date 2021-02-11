@@ -32,6 +32,7 @@ namespace WpfAlcohol
             rtlBalk.Width = 25 + (Math.Round(sldBier.Value) * 25) + (Math.Round(sldWhisky.Value) * 25) + (Math.Round(sldWijn.Value) * 25);
 
 
+
         }
 
         private void sldWijn_ValueChanged_1(object sender, RoutedPropertyChangedEventArgs<double> e)
