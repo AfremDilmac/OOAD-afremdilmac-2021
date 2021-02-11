@@ -16,27 +16,28 @@ namespace ConsoleBankautomaat
             int pincode;
             string keuze;
 
-            
-            //Loop pincode (pincode = 1111)
+            //Loop pincode (Hier heb ik pincode als loop ingesteld gebruiker mag zelf pincode kiezen.)
+            Console.WriteLine("Kies een pincode: ");
+            int IngevoerdePincode = Convert.ToInt32(Console.ReadLine());
+
             do
             {
                 Console.WriteLine("Bankautomaat");
                 Console.WriteLine("============ \n");
                 Console.Write("Geef uw pincode in: ");
                 pincode = Convert.ToInt32(Console.ReadLine());
-                if (pincode != 1111)
+                if (pincode != IngevoerdePincode)
                 {
-                    Console.WriteLine("Fout! probeer opnieuw");
+                    Console.WriteLine("Fout! probeer opnieuw \n");
                 }
-            } while (pincode != 1111);
+            } while (pincode != IngevoerdePincode);
 
-        
             //Operaties binnen een do while
             //u kunt altijd kiezen tot dat u c kiest om te stoppen
             do
             {
                 //Keuze van operatie
-                Console.WriteLine("\n a.afhaling \n b. storting \n c. stoppen \n je keuze: ");
+                Console.WriteLine("\n a. afhaling \n b. storting \n c. stoppen \n je keuze: ");
                 keuze = Convert.ToString(Console.ReadLine());
                 double nieuwesaldo;
 
@@ -71,8 +72,7 @@ namespace ConsoleBankautomaat
                 }
                 else
                 {
-                    Console.WriteLine("Fout invoer");
-                    Console.WriteLine("\n Ongeldige keuze \n a.afhaling \n b. storting \n c. stoppen \n je keuze: ");
+                    Console.WriteLine("\n Ongeldige keuze \n a. afhaling \n b. storting \n c. stoppen \n je keuze: ");
                     keuze = Convert.ToString(Console.ReadLine());
                 }
 
