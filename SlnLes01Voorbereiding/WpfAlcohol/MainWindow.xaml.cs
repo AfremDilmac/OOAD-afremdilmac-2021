@@ -26,7 +26,7 @@ namespace WpfAlcohol
      
         }
     
-        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        private void sld_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             double aantalGlazen = (sldBier.Value + sldWhisky.Value + sldWijn.Value);
 

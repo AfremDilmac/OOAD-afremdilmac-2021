@@ -11,9 +11,9 @@
         <Label Content="Alcohol-gehalte" HorizontalAlignment="Left" Margin="56,32,0,0" VerticalAlignment="Top" Height="52" Width="138" FontSize="16" FontWeight="Bold"/>
         <Image HorizontalAlignment="Left" Height="83" Margin="56,255,0,0" VerticalAlignment="Top" Width="82" Source="whisky.jpg"/>
         <Image HorizontalAlignment="Left" Height="83" Margin="56,172,0,0" VerticalAlignment="Top" Width="82" Source="glaswijn.jpg"/>
-        <Slider x:Name="sldBier" IsSnapToTickEnabled="True" TickFrequency="1" HorizontalAlignment="Left" Margin="225,128,0,0" VerticalAlignment="Top" Width="321" Maximum="5" ValueChanged="Slider_ValueChanged"/>
-        <Slider x:Name="sldWijn" IsSnapToTickEnabled="True" TickFrequency="1" HorizontalAlignment="Left" Margin="225,208,0,0" VerticalAlignment="Top" Width="321" Maximum="5" ValueChanged="Slider_ValueChanged"/>
-        <Slider x:Name="sldWhisky" IsSnapToTickEnabled="True" TickFrequency="1" HorizontalAlignment="Left" Margin="225,287,0,0" VerticalAlignment="Top" Width="321" Maximum="5" ValueChanged="Slider_ValueChanged"/>
+        <Slider x:Name="sldBier" IsSnapToTickEnabled="True" TickFrequency="1" HorizontalAlignment="Left" Margin="225,128,0,0" VerticalAlignment="Top" Width="321" Maximum="5" ValueChanged="sld_ValueChanged"/>
+        <Slider x:Name="sldWijn" IsSnapToTickEnabled="True" TickFrequency="1" HorizontalAlignment="Left" Margin="225,208,0,0" VerticalAlignment="Top" Width="321" Maximum="5" ValueChanged="sld_ValueChanged"/>
+        <Slider x:Name="sldWhisky" IsSnapToTickEnabled="True" TickFrequency="1" HorizontalAlignment="Left" Margin="225,287,0,0" VerticalAlignment="Top" Width="321" Maximum="5" ValueChanged="sld_ValueChanged"/>
         <Label x:Name="lblBier" Content="" HorizontalAlignment="Left" Margin="645,128,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblWijn" Content="" HorizontalAlignment="Left" Margin="645,208,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblWhisky" Content="" HorizontalAlignment="Left" Margin="645,287,0,0" VerticalAlignment="Top"/>
