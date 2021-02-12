@@ -31,8 +31,7 @@ namespace WpfOxo
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string o = "O";
-
+      
             if (turn %2 == 0)
             {
                 btn1.Content = Convert.ToString("O");
@@ -43,45 +42,45 @@ namespace WpfOxo
                 btn1.Content = Convert.ToString("X");
             }
 
-            if (btn1.Content == Convert.ToString("O") && btn2.Content == Convert.ToString("O"))
+            if (btn1.Content.ToString() == ("O") && btn2.Content.ToString() == ("O"))
             {
-                if (btn3.Content == Convert.ToString("O"))
+                if (btn3.Content.ToString() == ("O"))
                 {
                     lblUitvoer.Content = "Player 1 heeft gewonnen!";
                 }
             }
-            else if (btn1.Content == Convert.ToString("X") && btn2.Content == Convert.ToString("X"))
+            else if (btn1.Content.ToString() == ("X") && btn2.Content.ToString() == ("X"))
             {
-                if (btn3.Content == Convert.ToString("X"))
+                if (btn3.Content.ToString() == ("X"))
                 {
                     lblUitvoer.Content = "Player 2 heeft gewonnen!";
                 }
             }
-            if (btn1.Content == Convert.ToString("O") && btn4.Content == Convert.ToString("O"))
+            if (btn1.Content.ToString() == ("O") && btn4.Content.ToString() == ("O"))
             {
-                if (btn7.Content == Convert.ToString("O"))
+                if (btn7.Content.ToString() == ("O"))
                 {
                     lblUitvoer.Content = "Player 1 heeft gewonnen!";
                 }
             }
-            else if (btn1.Content == Convert.ToString("X") && btn4.Content == Convert.ToString("X"))
+            else if (btn1.Content.ToString() == ("X") && btn4.Content.ToString() == ("X"))
             {
-                if (btn7.Content == Convert.ToString("X"))
+                if (btn7.Content.ToString() == ("X"))
                 {
                     lblUitvoer.Content = "Player 2 heeft gewonnen!";
                 }
             }
 
-            if (btn1.Content == Convert.ToString("O") && btn4.Content == Convert.ToString("O"))
+            if (btn1.Content.ToString() == ("O") && btn4.Content.ToString() == ("O"))
             {
-                if (btn9.Content == Convert.ToString("O"))
+                if (btn9.Content.ToString() == ("O"))
                 {
                     lblUitvoer.Content = "Player 1 heeft gewonnen!";
                 }
             }
-            else if (btn1.Content == Convert.ToString("X") && btn4.Content == Convert.ToString("X"))
+            else if (btn1.Content.ToString() == ("X") && btn4.Content.ToString() == ("X"))
             {
-                if (btn9.Content == Convert.ToString("X"))
+                if (btn9.Content.ToString() == ("X"))
                 {
                     lblUitvoer.Content = "Player 2 heeft gewonnen!";
                 }
@@ -101,16 +100,16 @@ namespace WpfOxo
                 btn2.Content = Convert.ToString("O");
             }
 
-            if (btn1.Content == Convert.ToString("O") && btn2.Content == Convert.ToString("O"))
+            if (btn1.Content.ToString() == ("O") && btn2.Content.ToString() == ("O"))
             {
-                if (btn3.Content == Convert.ToString("O"))
+                if (btn3.Content.ToString() == ("O"))
                 {
                     lblUitvoer.Content = "Player 1 heeft gewonnen!";
                 }
             }
-            else if (btn1.Content == Convert.ToString("X") && btn2.Content == Convert.ToString("X"))
+            else if (btn1.Content.ToString() == ("X") && btn2.Content.ToString() == ("X"))
             {
-                if (btn3.Content == Convert.ToString("X"))
+                if (btn3.Content.ToString() == ("X"))
                 {
                     lblUitvoer.Content = "Player 2 heeft gewonnen!";
                 }
@@ -128,46 +127,46 @@ namespace WpfOxo
             {
                 btn3.Content = Convert.ToString("X");
             }
-            if (btn1.Content == Convert.ToString("O") && btn2.Content == Convert.ToString("O"))
+            if (btn1.Content.ToString() == ("O") && btn2.Content.ToString() == ("O"))
             {
-                if (btn3.Content == Convert.ToString("O"))
+                if (btn3.Content.ToString() == ("O"))
                 {
                     lblUitvoer.Content = "Player 1 heeft gewonnen!";
                 }
             }
-            else if (btn1.Content == Convert.ToString("X") && btn2.Content == Convert.ToString("X"))
+            else if (btn1.Content.ToString() == ("X") && btn2.Content.ToString() == ("X"))
             {
-                if (btn3.Content == Convert.ToString("X"))
+                if (btn3.Content.ToString() == ("X"))
                 {
                     lblUitvoer.Content = "Player 2 heeft gewonnen!";
                 }
             }
-            if (btn3.Content == Convert.ToString("O") && btn5.Content == Convert.ToString("O"))
+            if (btn3.Content.ToString() == ("O") && btn5.Content.ToString() == ("O"))
             {
-                if (btn7.Content == Convert.ToString("O"))
+                if (btn7.Content.ToString() == ("O"))
                 {
                     lblUitvoer.Content = "Player 1 heeft gewonnen!";
                 }
             }
-            else if (btn3.Content == Convert.ToString("X") && btn5.Content == Convert.ToString("X"))
+            else if (btn3.Content.ToString() == ("X") && btn5.Content.ToString() == ("X"))
             {
-                if (btn7.Content == Convert.ToString("X"))
+                if (btn7.Content.ToString() == ("X"))
                 {
                     lblUitvoer.Content = "Player 2 heeft gewonnen!";
                 }
             }
 
 
-            if (btn3.Content == Convert.ToString("O") && btn6.Content == Convert.ToString("O"))
+            if (btn3.Content.ToString() == ("O") && btn6.Content.ToString() == ("O"))
             {
-                if (btn9.Content == Convert.ToString("O"))
+                if (btn9.Content.ToString() == ("O"))
                 {
                     lblUitvoer.Content = "Player 1 heeft gewonnen!";
                 }
             }
-            else if (btn3.Content == Convert.ToString("X") && btn6.Content == Convert.ToString("X"))
+            else if (btn3.Content.ToString() == ("X") && btn6.Content.ToString() == ("X"))
             {
-                if (btn9.Content == Convert.ToString("X"))
+                if (btn9.Content.ToString() == ("X"))
                 {
                     lblUitvoer.Content = "Player 2 heeft gewonnen!";
                 }
@@ -186,31 +185,31 @@ namespace WpfOxo
                 btn4.Content = Convert.ToString("O");
             }
 
-            if (btn1.Content == Convert.ToString("O") && btn4.Content == Convert.ToString("O"))
+            if (btn1.Content.ToString() == ("O") && btn4.Content.ToString() == ("O"))
             {
-                if (btn7.Content == Convert.ToString("O"))
+                if (btn7.Content.ToString() == ("O"))
                 {
                     lblUitvoer.Content = "Player 1 heeft gewonnen!";
                 }
             }
-            else if (btn1.Content == Convert.ToString("X") && btn4.Content == Convert.ToString("X"))
+            else if (btn1.Content.ToString() == ("X") && btn4.Content.ToString() == ("X"))
             {
-                if (btn7.Content == Convert.ToString("X"))
+                if (btn7.Content.ToString() == ("X"))
                 {
                     lblUitvoer.Content = "Player 2 heeft gewonnen!";
                 }
             }
 
-            if (btn1.Content == Convert.ToString("O") && btn4.Content == Convert.ToString("O"))
+            if (btn1.Content.ToString() == ("O") && btn4.Content.ToString() == ("O"))
             {
-                if (btn9.Content == Convert.ToString("O"))
+                if (btn9.Content.ToString() == ("O"))
                 {
                     lblUitvoer.Content = "Player 1 heeft gewonnen!";
                 }
             }
-            else if (btn1.Content == Convert.ToString("X") && btn4.Content == Convert.ToString("X"))
+            else if (btn1.Content.ToString() == ("X") && btn4.Content.ToString() == ("X"))
             {
-                if (btn9.Content == Convert.ToString("X"))
+                if (btn9.Content.ToString() == ("X"))
                 {
                     lblUitvoer.Content = "Player 2 heeft gewonnen!";
                 }
@@ -243,31 +242,31 @@ namespace WpfOxo
             }
 
 
-            if (btn3.Content == Convert.ToString("O") && btn6.Content == Convert.ToString("O"))
+            if (btn3.Content.ToString() == ("O") && btn6.Content.ToString() == ("O"))
             {
-                if (btn9.Content == Convert.ToString("O"))
+                if (btn9.Content.ToString() == ("O"))
                 {
                     lblUitvoer.Content = "Player 1 heeft gewonnen!";
                 }
             }
-            else if (btn3.Content == Convert.ToString("X") && btn6.Content == Convert.ToString("X"))
+            else if (btn3.Content.ToString() == ("X") && btn6.Content.ToString() == ("X"))
             {
-                if (btn9.Content == Convert.ToString("X"))
+                if (btn9.Content.ToString() == ("X"))
                 {
                     lblUitvoer.Content = "Player 2 heeft gewonnen!";
                 }
             }
 
-            if (btn3.Content == Convert.ToString("O") && btn5.Content == Convert.ToString("O"))
+            if (btn3.Content.ToString() == ("O") && btn5.Content.ToString() == ("O"))
             {
-                if (btn7.Content == Convert.ToString("O"))
+                if (btn7.Content.ToString() == ("O"))
                 {
                     lblUitvoer.Content = "Player 1 heeft gewonnen!";
                 }
             }
-            else if (btn3.Content == Convert.ToString("X") && btn5.Content == Convert.ToString("X"))
+            else if (btn3.Content.ToString() == ("X") && btn5.Content.ToString() == ("X"))
             {
-                if (btn7.Content == Convert.ToString("X"))
+                if (btn7.Content.ToString() == ("X"))
                 {
                     lblUitvoer.Content = "Player 2 heeft gewonnen!";
                 }
@@ -286,47 +285,47 @@ namespace WpfOxo
                 btn7.Content = Convert.ToString("X");
             }
 
-            if (btn1.Content == Convert.ToString("O") && btn4.Content == Convert.ToString("O"))
+            if (btn1.Content.ToString() == ("O") && btn4.Content.ToString() == ("O"))
             {
-                if (btn7.Content == Convert.ToString("O"))
+                if (btn7.Content.ToString() == ("O"))
                 {
                     lblUitvoer.Content = "Player 1 heeft gewonnen!";
                 }
             }
-            else if (btn1.Content == Convert.ToString("X") && btn4.Content == Convert.ToString("X"))
+            else if (btn1.Content.ToString() == ("X") && btn4.Content.ToString() == ("X"))
             {
-                if (btn7.Content == Convert.ToString("X"))
+                if (btn7.Content.ToString() == ("X"))
                 {
                     lblUitvoer.Content = "Player 2 heeft gewonnen!";
                 }
             }
 
 
-            if (btn7.Content == Convert.ToString("O") && btn8.Content == Convert.ToString("O"))
+            if (btn7.Content.ToString() == ("O") && btn8.Content.ToString() == ("O"))
             {
-                if (btn9.Content == Convert.ToString("O"))
+                if (btn9.Content.ToString() == ("O"))
                 {
                     lblUitvoer.Content = "Player 1 heeft gewonnen!";
                 }
             }
-            else if (btn7.Content == Convert.ToString("X") && btn8.Content == Convert.ToString("X"))
+            else if (btn7.Content.ToString() == ("X") && btn8.Content.ToString() == ("X"))
             {
-                if (btn9.Content == Convert.ToString("X"))
+                if (btn9.Content.ToString() == ("X"))
                 {
                     lblUitvoer.Content = "Player 2 heeft gewonnen!";
                 }
             }
 
-            if (btn3.Content == Convert.ToString("O") && btn5.Content == Convert.ToString("O"))
+            if (btn3.Content.ToString() == ("O") && btn5.Content.ToString() == ("O"))
             {
-                if (btn7.Content == Convert.ToString("O"))
+                if (btn7.Content.ToString() == ("O"))
                 {
                     lblUitvoer.Content = "Player 1 heeft gewonnen!";
                 }
             }
-            else if (btn3.Content == Convert.ToString("X") && btn5.Content == Convert.ToString("X"))
+            else if (btn3.Content.ToString() == ("X") && btn5.Content.ToString() == ("X"))
             {
-                if (btn7.Content == Convert.ToString("X"))
+                if (btn7.Content.ToString() == ("X"))
                 {
                     lblUitvoer.Content = "Player 2 heeft gewonnen!";
                 }
@@ -345,16 +344,16 @@ namespace WpfOxo
                 btn8.Content = Convert.ToString("O");
             }
 
-            if (btn7.Content == Convert.ToString("O") && btn8.Content == Convert.ToString("O"))
+            if (btn7.Content.ToString() == ("O") && btn8.Content.ToString() == ("O"))
             {
-                if (btn9.Content == Convert.ToString("O"))
+                if (btn9.Content.ToString() == ("O"))
                 {
                     lblUitvoer.Content = "Player 1 heeft gewonnen!";
                 }
             }
-            else if (btn7.Content == Convert.ToString("X") && btn8.Content == Convert.ToString("X"))
+            else if (btn7.Content.ToString() == ("X") && btn8.Content.ToString() == ("X"))
             {
-                if (btn9.Content == Convert.ToString("X"))
+                if (btn9.Content.ToString() == ("X"))
                 {
                     lblUitvoer.Content = "Player 2 heeft gewonnen!";
                 }
@@ -374,46 +373,46 @@ namespace WpfOxo
             }
 
 
-            if (btn3.Content == Convert.ToString("O") && btn6.Content == Convert.ToString("O"))
+            if (btn3.Content.ToString() == ("O") && btn6.Content.ToString() == ("O"))
             {
-                if (btn9.Content == Convert.ToString("O"))
+                if (btn9.Content.ToString() == ("O"))
                 {
                     lblUitvoer.Content = "Player 1 heeft gewonnen!";
                 }
             }
-            else if (btn3.Content == Convert.ToString("X") && btn6.Content == Convert.ToString("X"))
+            else if (btn3.Content.ToString() == ("X") && btn6.Content.ToString() == ("X"))
             {
-                if (btn9.Content == Convert.ToString("X"))
+                if (btn9.Content.ToString() == ("X"))
                 {
                     lblUitvoer.Content = "Player 2 heeft gewonnen!";
                 }
             }
 
-            if (btn7.Content == Convert.ToString("O") && btn8.Content == Convert.ToString("O"))
+            if (btn7.Content.ToString() == ("O") && btn8.Content.ToString() == ("O"))
             {
-                if (btn9.Content == Convert.ToString("O"))
+                if (btn9.Content.ToString() == ("O"))
                 {
                     lblUitvoer.Content = "Player 1 heeft gewonnen!";
                 }
             }
-            else if (btn7.Content == Convert.ToString("X") && btn8.Content == Convert.ToString("X"))
+            else if (btn7.Content.ToString() == ("X") && btn8.Content.ToString() == ("X"))
             {
-                if (btn9.Content == Convert.ToString("X"))
+                if (btn9.Content.ToString() == ("X"))
                 {
                     lblUitvoer.Content = "Player 2 heeft gewonnen!";
                 }
             }
 
-            if (btn1.Content == Convert.ToString("O") && btn4.Content == Convert.ToString("O"))
+            if (btn1.Content.ToString() == ("O") && btn4.Content.ToString() == ("O"))
             {
-                if (btn9.Content == Convert.ToString("O"))
+                if (btn9.Content.ToString() == ("O"))
                 {
                     lblUitvoer.Content = "Player 1 heeft gewonnen!";
                 }
             }
-            else if (btn1.Content == Convert.ToString("X") && btn4.Content == Convert.ToString("X"))
+            else if (btn1.Content.ToString() == ("X") && btn4.Content.ToString() == ("X"))
             {
-                if (btn9.Content == Convert.ToString("X"))
+                if (btn9.Content.ToString() == ("X"))
                 {
                     lblUitvoer.Content = "Player 2 heeft gewonnen!";
                 }

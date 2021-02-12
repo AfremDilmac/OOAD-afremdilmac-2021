@@ -28,6 +28,9 @@ namespace WpfAlcohol
 
         private void sldBier_ValueChanged_1(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
+            int r = 30;
+            int g = 255;
+            int b = 0;
             lblBier.Content = Convert.ToString(Math.Round(sldBier.Value)) + " glazen";
             rtlBalk.Width = 25 + (Math.Round(sldBier.Value) * 25) + (Math.Round(sldWhisky.Value) * 25) + (Math.Round(sldWijn.Value) * 25);
             rtlBalk.Fill = new SolidColorBrush(Color.FromRgb(40, 255, 0));
