@@ -25,32 +25,24 @@ namespace WpfAlcohol
             InitializeComponent();
      
         }
-
-        private void sldBier_ValueChanged_1(object sender, RoutedPropertyChangedEventArgs<double> e)
+    
+        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            int r = 30;
-            int g = 255;
-            int b = 0;
+            double aantalGlazen = (sldBier.Value + sldWhisky.Value + sldWijn.Value);
+
+            byte r = Convert.ToByte(17 * aantalGlazen);
+            byte g = Convert.ToByte(255 -(17 * aantalGlazen));
+            byte b = 0;
+
             lblBier.Content = Convert.ToString(Math.Round(sldBier.Value)) + " glazen";
-            rtlBalk.Width = 25 + (Math.Round(sldBier.Value) * 25) + (Math.Round(sldWhisky.Value) * 25) + (Math.Round(sldWijn.Value) * 25);
-            rtlBalk.Fill = new SolidColorBrush(Color.FromRgb(40, 255, 0));
-
-
-
-        }
-
-        private void sldWijn_ValueChanged_1(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
             lblWijn.Content = Convert.ToString(Math.Round(sldWijn.Value)) + " glazen";
-            rtlBalk.Width = 25 + (Math.Round(sldBier.Value) * 25) + (Math.Round(sldWhisky.Value) * 25) + (Math.Round(sldWijn.Value) * 25);
-            rtlBalk.Fill = new SolidColorBrush(Color.FromRgb(40, 255, 0));
-        }
-
-        private void sldWhisky_ValueChanged_1(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
             lblWhisky.Content = Convert.ToString(Math.Round(sldWhisky.Value)) + " glazen";
             rtlBalk.Width = 25 + (Math.Round(sldBier.Value) * 25) + (Math.Round(sldWhisky.Value) * 25) + (Math.Round(sldWijn.Value) * 25);
-            rtlBalk.Fill = new SolidColorBrush(Color.FromRgb(40, 255, 0));
+
+            rtlBalk.Fill = new SolidColorBrush(Color.FromRgb(r, g, b));
+
+
         }
+
     }
 }
