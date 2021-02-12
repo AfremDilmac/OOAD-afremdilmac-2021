@@ -29,13 +29,16 @@ namespace WpfChat
         {
             
             string a = boxBericht.Text;
+            //Nieuwe lijn
             string newLine = Environment.NewLine;
+            //Hier kan ik woorden toevoegen om scheldwoorden te vervangen door ***
             boxBericht.Text = a;
             a = a.Replace("Fuck", "***").Replace("Dombo", "***").Replace("Gemeenerik", "***");
-           
+
+           //Text word hiermee gestuurd naar chat.
             string text = Convert.ToString($"{boxNaam.Text} says: \n {a}" + newLine);
             blockChat.Text += text + newLine;
-
+            //Na clicken op button verzenden wordt Naam & Bericht leeg.
             Convert.ToString(boxNaam.Text = "");
             Convert.ToString(boxBericht.Text = "");
 

@@ -30,15 +30,18 @@ namespace WpfAlcohol
         {
             double aantalGlazen = (sldBier.Value + sldWhisky.Value + sldWijn.Value);
 
+            //Formule om kleur te bepalen met via rgb met aantalglazen (slidervalue)
             byte r = Convert.ToByte(17 * aantalGlazen);
             byte g = Convert.ToByte(255 -(17 * aantalGlazen));
             byte b = 0;
 
+            //Text van aantal glazen hernomen van de slider value
             lblBier.Content = Convert.ToString(Math.Round(sldBier.Value)) + " glazen";
             lblWijn.Content = Convert.ToString(Math.Round(sldWijn.Value)) + " glazen";
             lblWhisky.Content = Convert.ToString(Math.Round(sldWhisky.Value)) + " glazen";
             rtlBalk.Width = 25 + (Math.Round(sldBier.Value) * 25) + (Math.Round(sldWhisky.Value) * 25) + (Math.Round(sldWijn.Value) * 25);
 
+            //Kleur wordt gegeven aan balk
             rtlBalk.Fill = new SolidColorBrush(Color.FromRgb(r, g, b));
 
 

@@ -31,7 +31,7 @@ namespace WpfOxo
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-      
+            //Hier wordt er berekend wie zijn beurt is om te spelen.
             if (turn %2 == 0)
             {
                 btn1.Content = Convert.ToString("O");
@@ -41,7 +41,7 @@ namespace WpfOxo
             {
                 btn1.Content = Convert.ToString("X");
             }
-
+            //Hier ziet men of de button O of X zal zijn.
             if (btn1.Content.ToString() == ("O") && btn2.Content.ToString() == ("O"))
             {
                 if (btn3.Content.ToString() == ("O"))
@@ -90,6 +90,7 @@ namespace WpfOxo
 
         private void btn2_Click(object sender, RoutedEventArgs e)
         {
+            //Hier wordt er berekend wie zijn beurt is om te spelen.
             if (turn %2 == 1)
             {
                 btn2.Content = Convert.ToString("X");
@@ -100,6 +101,7 @@ namespace WpfOxo
                 btn2.Content = Convert.ToString("O");
             }
 
+            //Hier ziet men of de button O of X zal zijn.
             if (btn1.Content.ToString() == ("O") && btn2.Content.ToString() == ("O"))
             {
                 if (btn3.Content.ToString() == ("O"))
@@ -118,6 +120,7 @@ namespace WpfOxo
 
         private void btn3_Click(object sender, RoutedEventArgs e)
         {
+            //Hier wordt er berekend wie zijn beurt is om te spelen.
             if (turn % 2 == 0)
             {
                 btn3.Content = Convert.ToString("O");
@@ -127,6 +130,8 @@ namespace WpfOxo
             {
                 btn3.Content = Convert.ToString("X");
             }
+
+            //Hier ziet men of de button O of X zal zijn.
             if (btn1.Content.ToString() == ("O") && btn2.Content.ToString() == ("O"))
             {
                 if (btn3.Content.ToString() == ("O"))
@@ -175,6 +180,7 @@ namespace WpfOxo
 
         private void btn4_Click(object sender, RoutedEventArgs e)
         {
+            //Hier wordt er berekend wie zijn beurt is om te spelen.
             if (turn % 2 == 1)
             {
                 btn4.Content = Convert.ToString("X");
@@ -185,6 +191,7 @@ namespace WpfOxo
                 btn4.Content = Convert.ToString("O");
             }
 
+            //Hier ziet men of de button O of X zal zijn.
             if (btn1.Content.ToString() == ("O") && btn4.Content.ToString() == ("O"))
             {
                 if (btn7.Content.ToString() == ("O"))
@@ -218,6 +225,7 @@ namespace WpfOxo
 
         private void btn5_Click(object sender, RoutedEventArgs e)
         {
+            //Hier wordt er berekend wie zijn beurt is om te spelen.
             if (turn % 2 == 0)
             {
                 btn5.Content = Convert.ToString("O");
@@ -231,6 +239,7 @@ namespace WpfOxo
 
         private void btn6_Click(object sender, RoutedEventArgs e)
         {
+            //Hier wordt er berekend wie zijn beurt is om te spelen.
             if (turn % 2 == 1)
             {
                 btn6.Content = Convert.ToString("X");
@@ -241,7 +250,7 @@ namespace WpfOxo
                 btn6.Content = Convert.ToString("O");
             }
 
-
+            //Hier ziet men of de button O of X zal zijn.
             if (btn3.Content.ToString() == ("O") && btn6.Content.ToString() == ("O"))
             {
                 if (btn9.Content.ToString() == ("O"))
@@ -275,6 +284,7 @@ namespace WpfOxo
 
         private void btn7_Click(object sender, RoutedEventArgs e)
         {
+            //Hier wordt er berekend wie zijn beurt is om te spelen.
             if (turn % 2 == 0)
             {
                 btn7.Content = Convert.ToString("O");
@@ -285,6 +295,7 @@ namespace WpfOxo
                 btn7.Content = Convert.ToString("X");
             }
 
+            //Hier ziet men of de button O of X zal zijn.
             if (btn1.Content.ToString() == ("O") && btn4.Content.ToString() == ("O"))
             {
                 if (btn7.Content.ToString() == ("O"))
@@ -334,6 +345,7 @@ namespace WpfOxo
 
         private void btn8_Click(object sender, RoutedEventArgs e)
         {
+            //Hier wordt er berekend wie zijn beurt is om te spelen.
             if (turn % 2 == 1)
             {
                 btn8.Content = Convert.ToString("X");
@@ -344,6 +356,7 @@ namespace WpfOxo
                 btn8.Content = Convert.ToString("O");
             }
 
+            //Hier ziet men of de button O of X zal zijn.
             if (btn7.Content.ToString() == ("O") && btn8.Content.ToString() == ("O"))
             {
                 if (btn9.Content.ToString() == ("O"))
@@ -362,6 +375,7 @@ namespace WpfOxo
 
         private void btn9_Click(object sender, RoutedEventArgs e)
         {
+            //Hier wordt er berekend wie zijn beurt is om te spelen.
             if (turn % 2 == 0)
             {
                 btn9.Content = Convert.ToString("O");
@@ -372,7 +386,7 @@ namespace WpfOxo
                 btn9.Content = Convert.ToString("X");
             }
 
-
+            //Hier ziet men of de button O of X zal zijn.
             if (btn3.Content.ToString() == ("O") && btn6.Content.ToString() == ("O"))
             {
                 if (btn9.Content.ToString() == ("O"))
