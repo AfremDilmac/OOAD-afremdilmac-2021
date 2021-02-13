@@ -16,7 +16,7 @@
 * \n vervangen door Environment.NewLine
 
 ### WpfFormChecking:
-* Registreren button: nu gaat hij foutmeldingen wissen als na het foutmelding men iets invult in de geselecteerde textbox.
+* Registreren button: nu gaat hij foutmeldingen wissen als na het foutmelding men iets invoert waar er eerst een foutmelding was.
 * Wissen button: Nu gaat dit alles wissen wat ingevoerd is door mens en foutmeldingen.
 * Commentaar bijgevoegd.
 
