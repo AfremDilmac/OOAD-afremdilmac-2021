@@ -15,6 +15,7 @@ namespace ConsoleBankautomaat
             double saldo = 500;
             int pincode;
             string keuze;
+            
 
             //Loop pincode (Hier heb ik pincode als loop ingesteld gebruiker mag zelf pincode kiezen.)
             Console.WriteLine("Kies een pincode: ");
@@ -28,7 +29,7 @@ namespace ConsoleBankautomaat
                 pincode = Convert.ToInt32(Console.ReadLine());
                 if (pincode != IngevoerdePincode)
                 {
-                    Console.WriteLine("Fout! probeer opnieuw \n");
+                    Console.WriteLine("Fout! probeer opnieuw" + Environment.NewLine);
                 }
             } while (pincode != IngevoerdePincode);
 
@@ -37,7 +38,7 @@ namespace ConsoleBankautomaat
             do
             {
                 //Keuze van operatie
-                Console.WriteLine("\n a. afhaling \n b. storting \n c. stoppen \n je keuze: ");
+                Console.WriteLine($" a. afhaling {Environment.NewLine} b. storting {Environment.NewLine} c. stoppen {Environment.NewLine} je keuze: ");
                 keuze = Convert.ToString(Console.ReadLine());
                 double nieuwesaldo;
 
@@ -49,7 +50,7 @@ namespace ConsoleBankautomaat
                     nieuwesaldo = Convert.ToDouble(saldo - afhalen);
                     if (nieuwesaldo < 0)
                     {
-                        Console.WriteLine("Fout! u kunt niet onder de saldo gaan");
+                        Console.WriteLine("Fout! uw saldo kan niet minder dan 0 zijn");
                     }
                     else
                     {
@@ -72,7 +73,7 @@ namespace ConsoleBankautomaat
                 }
                 else
                 {
-                    Console.WriteLine("\n Ongeldige keuze \n a. afhaling \n b. storting \n c. stoppen \n je keuze: ");
+                    Console.WriteLine($"{Environment.NewLine} Ongeldige keuze {Environment.NewLine} a. afhaling {Environment.NewLine} b. storting {Environment.NewLine} c. stoppen {Environment.NewLine} je keuze: ");
                     keuze = Convert.ToString(Console.ReadLine());
                 }
 
