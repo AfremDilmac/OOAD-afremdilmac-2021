@@ -24,7 +24,7 @@ namespace ConsoleBankautomaat
             do
             {
                 Console.WriteLine("Bankautomaat");
-                Console.WriteLine("============ \n");
+                Console.WriteLine("============" + Environment.NewLine);
                 Console.Write("Geef uw pincode in: ");
                 pincode = Convert.ToInt32(Console.ReadLine());
                 if (pincode != IngevoerdePincode)
