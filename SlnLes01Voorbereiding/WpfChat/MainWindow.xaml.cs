@@ -33,10 +33,10 @@ namespace WpfChat
             string newLine = Environment.NewLine;
             //Hier kan ik woorden toevoegen om scheldwoorden te vervangen door ***
             boxBericht.Text = a;
-            a = a.Replace("Fuck", "***").Replace("Dombo", "***").Replace("Gemeenerik", "***");
+            a = a.Replace("Fuck", "***").Replace("Dombo", "***").Replace("Gemeenerik", "***").Replace("Hoer", "***").Replace("Trut", "***").Replace("Sukkel", "***");
 
            //Text word hiermee gestuurd naar chat.
-            string text = Convert.ToString($"{boxNaam.Text} says: \n {a}" + newLine);
+            string text = Convert.ToString($"{boxNaam.Text} says: {Environment.NewLine} {a}" + newLine);
             blockChat.Text += text + newLine;
             //Na clicken op button verzenden wordt Naam & Bericht leeg.
             Convert.ToString(boxNaam.Text = "");

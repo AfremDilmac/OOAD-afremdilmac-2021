@@ -11,6 +11,8 @@
 
 ### WpfChat
 * Commentaar bijgevoegd.
+* \n vervangen door Environment.NewLine
+* Meer scheldwoorden vervangen door ***
 
 ### ConsoleBankautomaat
 * \n vervangen door Environment.NewLine
