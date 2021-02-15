@@ -18,8 +18,8 @@
 * \n vervangen door Environment.NewLine
 
 ### WpfFormChecking:
-* Registreren button: nu gaat hij foutmeldingen wissen als na het foutmelding men iets invoert waar er eerst een foutmelding was.
-* Wissen button: Nu gaat dit alles wissen wat ingevoerd is door mens en foutmeldingen.
+* Deze knop wordt gebruikt om te registreren en om te controleren of er fouten zijn, als er fouten zijn en dat iemand deze achteraf corrigeert door nogmaals op te drukken op registreren de foutmeldingen verdwijnen.
+* Wissen button: deze knop wist alles wat er is, wat de gebruiker heeft ingevuld en foutmeldingen
 * Commentaar bijgevoegd.
 
 ### WpfOxo
