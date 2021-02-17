@@ -1,0 +1,7 @@
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\ConsoleKarakter\bin\Debug\ConsoleKarakter.exe.config
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\ConsoleKarakter\bin\Debug\ConsoleKarakter.exe
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\ConsoleKarakter\bin\Debug\ConsoleKarakter.pdb
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\ConsoleKarakter\obj\Debug\ConsoleKarakter.csprojAssemblyReference.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\ConsoleKarakter\obj\Debug\ConsoleKarakter.csproj.CoreCompileInputs.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\ConsoleKarakter\obj\Debug\ConsoleKarakter.exe
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\ConsoleKarakter\obj\Debug\ConsoleKarakter.pdb

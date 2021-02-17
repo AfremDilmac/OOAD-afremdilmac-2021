@@ -1,0 +1,7 @@
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\ConsoleKlinkers\bin\Debug\ConsoleKlinkers.exe.config
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\ConsoleKlinkers\bin\Debug\ConsoleKlinkers.exe
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\ConsoleKlinkers\bin\Debug\ConsoleKlinkers.pdb
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\ConsoleKlinkers\obj\Debug\ConsoleKlinkers.csproj.CoreCompileInputs.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\ConsoleKlinkers\obj\Debug\ConsoleKlinkers.exe
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\ConsoleKlinkers\obj\Debug\ConsoleKlinkers.pdb
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\ConsoleKlinkers\obj\Debug\ConsoleKlinkers.csprojAssemblyReference.cache
