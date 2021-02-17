@@ -1,0 +1,7 @@
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\SlnLes02\ConsoleAsciiArt\bin\Debug\ConsoleAsciiArt.exe.config
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\SlnLes02\ConsoleAsciiArt\bin\Debug\ConsoleAsciiArt.exe
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\SlnLes02\ConsoleAsciiArt\bin\Debug\ConsoleAsciiArt.pdb
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\SlnLes02\ConsoleAsciiArt\obj\Debug\ConsoleAsciiArt.csprojAssemblyReference.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\SlnLes02\ConsoleAsciiArt\obj\Debug\ConsoleAsciiArt.csproj.CoreCompileInputs.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\SlnLes02\ConsoleAsciiArt\obj\Debug\ConsoleAsciiArt.exe
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\SlnLes02\ConsoleAsciiArt\obj\Debug\ConsoleAsciiArt.pdb
