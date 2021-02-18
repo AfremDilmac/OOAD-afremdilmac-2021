@@ -12,7 +12,7 @@ namespace ConsoleKlinkers
         {
             string naam;
             int aantalKlinkers = 0;
-            int aantalSpaties = 0;
+            int letters = 0;            
             Console.Write("Geef een tekst: ");
             naam = Convert.ToString(Console.ReadLine());
 
@@ -23,15 +23,26 @@ namespace ConsoleKlinkers
                     aantalKlinkers++;
                 }
             }
-           
-            char letter = Convert.ToChar(naam);
-            letter++;
-            string naamVerandering = naam;
-
-
 
             Console.WriteLine($"deze tekst bevat {aantalKlinkers} klinkers");
-            Console.WriteLine($"{naamVerandering}");
+
+            Console.Write("Jouw geheimnaam is: ");
+            foreach (char ch in naam)
+            {
+              
+              char bewerking = Convert.ToChar(ch + 1);
+
+                string geheim = Convert.ToString(bewerking);
+               
+                Console.Write(geheim);
+            }
+     
+            for (int i = 0; i < naam.Length; i++)
+            {
+                letters++;
+            }
+
+            Console.WriteLine($"{Environment.NewLine}Uw tekst heeft een totaal van {letters} letters.");
             Console.ReadKey();
         }
     }
