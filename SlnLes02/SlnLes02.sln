@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleKarakter", "ConsoleK
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleKlinkers", "ConsoleKlinkers\ConsoleKlinkers.csproj", "{61C751A7-D021-4F3F-867D-01FF419E1E91}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTimer", "WpfApp1\WpfTimer.csproj", "{2C41F9D7-E43E-4427-A58D-E09B4BE31BF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{61C751A7-D021-4F3F-867D-01FF419E1E91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61C751A7-D021-4F3F-867D-01FF419E1E91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61C751A7-D021-4F3F-867D-01FF419E1E91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C41F9D7-E43E-4427-A58D-E09B4BE31BF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C41F9D7-E43E-4427-A58D-E09B4BE31BF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C41F9D7-E43E-4427-A58D-E09B4BE31BF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C41F9D7-E43E-4427-A58D-E09B4BE31BF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
