@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="300" Width="350">
     <Grid>
-        <Label x:Name="lblCount" Content="" HorizontalAlignment="Left" Margin="184,72,0,0" VerticalAlignment="Top" Width="82" RenderTransformOrigin="0.979,0.493" Height="104" FontSize="30"/>
+        <Label x:Name="lblCount" Content="" HorizontalAlignment="Left" Margin="184,68,0,0" VerticalAlignment="Top" Width="82" RenderTransformOrigin="0.979,0.493" Height="104" FontSize="30"/>
         <Button x:Name="btnStart" Content="START" HorizontalAlignment="Left" Margin="53,49,0,0" VerticalAlignment="Top" Width="75" Click="btnStart_Click"/>
         <Button x:Name="btnStop" Content="STOP" HorizontalAlignment="Left" Margin="53,112,0,0" VerticalAlignment="Top" Width="75" Click="btnStop_Click"/>
         <Button Content="RESET" HorizontalAlignment="Left" Margin="53,178,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>

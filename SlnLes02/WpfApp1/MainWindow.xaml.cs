@@ -22,7 +22,7 @@ namespace WpfApp1
     public partial class MainWindow : Window
     {
         private DispatcherTimer timer = new DispatcherTimer();
-        private int count = 0;
+        private double count = 0;
         public MainWindow()
         {
            
@@ -39,7 +39,7 @@ namespace WpfApp1
         {
             InitializeComponent();
             lblCount.Content = count;
-            timer.Interval = TimeSpan.FromMilliseconds(1000);
+            timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += timer_Tick; // voeg methode toe aan timer
             timer.Start(); // start de timer
         }
