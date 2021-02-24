@@ -1,0 +1,15 @@
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfEllipsen\bin\Debug\WpfEllipsen.exe.config
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfEllipsen\bin\Debug\WpfEllipsen.exe
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfEllipsen\bin\Debug\WpfEllipsen.pdb
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfEllipsen\obj\Debug\MainWindow.g.cs
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfEllipsen\obj\Debug\App.g.cs
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfEllipsen\obj\Debug\WpfEllipsen_MarkupCompile.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfEllipsen\obj\Debug\WpfEllipsen_MarkupCompile.lref
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfEllipsen\obj\Debug\MainWindow.baml
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfEllipsen\obj\Debug\WpfEllipsen.g.resources
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfEllipsen\obj\Debug\WpfEllipsen.Properties.Resources.resources
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfEllipsen\obj\Debug\WpfEllipsen.csproj.GenerateResource.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfEllipsen\obj\Debug\WpfEllipsen.csproj.CoreCompileInputs.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfEllipsen\obj\Debug\WpfEllipsen.exe
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfEllipsen\obj\Debug\WpfEllipsen.pdb
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfEllipsen\obj\Debug\WpfEllipsen.csprojAssemblyReference.cache

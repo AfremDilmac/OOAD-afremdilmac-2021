@@ -7,6 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Canvas x:Name="canvas1" HorizontalAlignment="Left" Height="255" Margin="10,141,0,0" VerticalAlignment="Top" Width="711"/>
+        <Button x:Name="btnTekenen" Content="TEKENEN" HorizontalAlignment="Left" Margin="583,44,0,0" VerticalAlignment="Top" Width="138" Height="30" FontWeight="Bold" Click="btnTekenen_Click"/>
+        <Label Content="Aantal cirkels:" HorizontalAlignment="Left" Margin="46,33,0,0" VerticalAlignment="Top"/>
+        <Label Content="Minimum radius:" HorizontalAlignment="Left" Margin="46,64,0,0" VerticalAlignment="Top"/>
+        <Label Content="Maximum radius:" HorizontalAlignment="Left" Margin="46,95,0,0" VerticalAlignment="Top"/>
+        <Slider x:Name="sldEen" HorizontalAlignment="Left" Margin="193,41,0,0" VerticalAlignment="Top" Width="290" ValueChanged="sldHorizontal_ValueChanged" Maximum="50"/>
+        <Slider x:Name="sldTwee" HorizontalAlignment="Left" Margin="193,72,0,0" VerticalAlignment="Top" Width="290" ValueChanged="sldHorizontal_ValueChanged" Maximum="50"/>
+        <Slider x:Name="sldDrie" HorizontalAlignment="Left" Margin="193,103,0,0" VerticalAlignment="Top" Width="290" ValueChanged="sldHorizontal_ValueChanged" Maximum="50"/>
+        <Label x:Name="lblSlider1"  Content="" HorizontalAlignment="Left" Margin="504,41,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSlider2" Content="" HorizontalAlignment="Left" Margin="504,72,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSlider3" Content="" HorizontalAlignment="Left" Margin="504,103,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

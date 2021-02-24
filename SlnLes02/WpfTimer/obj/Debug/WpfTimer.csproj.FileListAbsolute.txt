@@ -1,0 +1,15 @@
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfTimer\bin\Debug\WpfTimer.exe.config
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfTimer\bin\Debug\WpfTimer.exe
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfTimer\bin\Debug\WpfTimer.pdb
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfTimer\obj\Debug\WpfTimer.csprojAssemblyReference.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfTimer\obj\Debug\MainWindow.g.cs
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfTimer\obj\Debug\App.g.cs
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfTimer\obj\Debug\WpfTimer_MarkupCompile.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfTimer\obj\Debug\WpfTimer_MarkupCompile.lref
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfTimer\obj\Debug\MainWindow.baml
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfTimer\obj\Debug\WpfTimer.g.resources
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfTimer\obj\Debug\WpfTimer.Properties.Resources.resources
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfTimer\obj\Debug\WpfTimer.csproj.GenerateResource.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfTimer\obj\Debug\WpfTimer.csproj.CoreCompileInputs.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfTimer\obj\Debug\WpfTimer.exe
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes02\WpfTimer\obj\Debug\WpfTimer.pdb

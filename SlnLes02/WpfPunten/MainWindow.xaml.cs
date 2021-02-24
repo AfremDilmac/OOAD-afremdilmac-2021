@@ -24,20 +24,36 @@ namespace WpfPunten
         {
             InitializeComponent();
         }
-
+        
         private void lstLijst_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
+            //Hier kan men een ingevoerde item aanpassen 
+            string[] array = lstLijst.SelectedItem.ToString().Split('-');
+            boxNaam.Text = array[0];
+            boxPunt.Text = array[1];
+
+            if (boxNaam.Text == array[0])
+            {
+                lstLijst.SelectedItem = ($"{boxNaam.Text} - {boxPunt.Text}");
+            }
         }
 
         private void btnToevoegen_Click(object sender, RoutedEventArgs e)
         {
-            lstLijst.Items.Add($"{boxNaam.Text} - {boxPunt.Text}/100");
+            //naam en punt / 100 wordt toegevoegd naar de lijst
+
+            string text =  ($"{boxNaam.Text} - {boxPunt.Text}/100");
+           
+            lstLijst.Items.Add(text);
+
         }
 
         private void btnVerwijder_Click(object sender, RoutedEventArgs e)
         {
+            //Hier kan men een item in de lijst kiezen en verwijderen (vb: een item is aangepast dan kan men de oude versie verwijderen)
             lstLijst.Items.RemoveAt(lstLijst.Items.IndexOf(lstLijst.SelectedItem));
         }
+
+       
     }
 }
