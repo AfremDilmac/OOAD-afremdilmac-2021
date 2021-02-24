@@ -32,13 +32,12 @@ namespace WpfTimer
         }
         private void timer_Tick(object sender, EventArgs e)
         {
-
+            
             count++;
             lblCount.Content = TimeSpan.FromSeconds(count).ToString(@"mm\:ss");
             rctSeconds.Height = count;
             rctMinuts.Height = count / 60;
-         
-            
+
         }
 
         private void btnStart_Click(object sender, RoutedEventArgs e)
@@ -49,11 +48,13 @@ namespace WpfTimer
 
         private void btnStop_Click(object sender, RoutedEventArgs e)
         {
+            //stopt de timer
             timer.Stop();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            //Reset button count terug aan 0 en timer herstart.
             timer.Stop();
             count = 0;
             lblCount.Content = count;
