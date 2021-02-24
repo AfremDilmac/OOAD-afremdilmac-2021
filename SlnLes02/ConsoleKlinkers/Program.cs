@@ -12,7 +12,7 @@ namespace ConsoleKlinkers
         {
             string naam;
             int aantalKlinkers = 0;
-              
+            int letters = 0;            
             Console.Write("Geef een tekst: ");
             naam = Convert.ToString(Console.ReadLine());
 
@@ -32,18 +32,18 @@ namespace ConsoleKlinkers
             //Voor elk character in een word +1 (dus naar volgende letter a wordt b)
             foreach (char ch in naam)
             {
-              
-              char bewerking = Convert.ToChar(ch + 1);
+
+                char bewerking = Convert.ToChar(ch + 1);
 
                 string geheim = Convert.ToString(bewerking);
-               
+
                 Console.Write(geheim);
             }
 
             //telt lengte van woorden
             int lengte = naam.Length;
 
-            Console.WriteLine($"{Environment.NewLine}Uw tekst heeft een totaal van {lengte} letters.");
+            Console.WriteLine($"{Environment.NewLine}Uw tekst heeft een totaal van {letters} letters.");
             Console.ReadKey();
         }
     }

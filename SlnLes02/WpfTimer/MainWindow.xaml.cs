@@ -42,8 +42,8 @@ namespace WpfTimer
 
         private void btnStart_Click(object sender, RoutedEventArgs e)
         {
-
-            timer.Start(); // start de timer
+            //start de timer
+            timer.Start();
         }
 
         private void btnStop_Click(object sender, RoutedEventArgs e)
