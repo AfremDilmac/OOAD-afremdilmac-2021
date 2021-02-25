@@ -41,7 +41,7 @@ namespace ConsoleKlinkers
             }
 
             //telt lengte van woorden
-            int lengte = naam.Length;
+            int lengte = naam.Replace(" ",string.Empty).Length;
 
             Console.WriteLine($"{Environment.NewLine}Uw tekst heeft een totaal van {lengte} letters.");
             Console.ReadKey();
