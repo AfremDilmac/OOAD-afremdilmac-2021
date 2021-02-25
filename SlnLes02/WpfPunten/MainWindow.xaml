@@ -13,7 +13,7 @@
         <TextBox x:Name="boxPunt" HorizontalAlignment="Left" Height="23" Margin="116,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnToevoegen" Content="Toevoegen" HorizontalAlignment="Left" Margin="241,22,0,0" VerticalAlignment="Top" Width="104" RenderTransformOrigin="0.435,0.658" Height="53" Click="btnToevoegen_Click"/>
         <Label Content="Filter op:" HorizontalAlignment="Left" Margin="20,112,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtFilter"  HorizontalAlignment="Left" Height="23" Margin="95,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="txtFilter"  HorizontalAlignment="Left" Height="23" Margin="95,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" TextChanged="txtFilter_TextChanged"/>
         <ListBox x:Name="lstLijst" HorizontalAlignment="Left" Height="118" Margin="20,143,0,0" VerticalAlignment="Top" Width="325" SelectionChanged="lstLijst_SelectionChanged"/>
         <Button x:Name="btnVerwijder" Content="Verwijder" HorizontalAlignment="Left" Margin="20,266,0,0" VerticalAlignment="Top" Width="325" Click="btnVerwijder_Click"/>
 

@@ -23,6 +23,7 @@ namespace WpfPunten
         public MainWindow()
         {
             InitializeComponent();
+           
         }
         
         private void lstLijst_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -53,7 +54,14 @@ namespace WpfPunten
             //Hier kan men een item in de lijst kiezen en verwijderen (vb: een item is aangepast dan kan men de oude versie verwijderen)
             lstLijst.Items.RemoveAt(lstLijst.Items.IndexOf(lstLijst.SelectedItem));
         }
-
-       
+        
+        private void txtFilter_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (txtFilter.Text != "")
+            {
+                lstLijst.Items.Clear();
+               
+            }
+        }
     }
 }
