@@ -28,15 +28,7 @@ namespace WpfPunten
         
         private void lstLijst_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            //Hier kan men een ingevoerde item aanpassen 
-            string[] array = lstLijst.SelectedItem.ToString().Split('-');
-            boxNaam.Text = array[0];
-            boxPunt.Text = array[1];
 
-            if (boxNaam.Text == array[0])
-            {
-                lstLijst.SelectedItem = ($"{boxNaam.Text} - {boxPunt.Text}");
-            }
         }
 
         private void btnToevoegen_Click(object sender, RoutedEventArgs e)
@@ -53,10 +45,12 @@ namespace WpfPunten
         {
             //Hier kan men een item in de lijst kiezen en verwijderen (vb: een item is aangepast dan kan men de oude versie verwijderen)
             lstLijst.Items.RemoveAt(lstLijst.Items.IndexOf(lstLijst.SelectedItem));
+
         }
         
         private void txtFilter_TextChanged(object sender, TextChangedEventArgs e)
         {
+
             if (txtFilter.Text != "")
             {
                 lstLijst.Items.Clear();

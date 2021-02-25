@@ -10,6 +10,7 @@ namespace ConsoleAsciiArt
     {
         static void Main(string[] args)
         {
+            //Via multilinestring "@" kan ik hier tekenen op meerdere lijnen.
             Console.WriteLine(@"
       ##          ##
         ##      ##
