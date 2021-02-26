@@ -20,10 +20,12 @@ namespace WpfPunten
     /// </summary>
     public partial class MainWindow : Window
     {
+       
         public MainWindow()
         {
+            
             InitializeComponent();
-           
+  
         }
         
         private void lstLijst_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -34,16 +36,21 @@ namespace WpfPunten
         private void btnToevoegen_Click(object sender, RoutedEventArgs e)
         {
             //naam en punt / 100 wordt toegevoegd naar de lijst
-
             string text =  ($"{boxNaam.Text} - {boxPunt.Text}/100");
-           
-            lstLijst.Items.Add(text);
 
+            ListBoxItem newItem = new ListBoxItem();
+            newItem.Content = text;
+            lstLijst.Items.Add(newItem);
+            
         }
 
         private void btnVerwijder_Click(object sender, RoutedEventArgs e)
         {
             //Hier kan men een item in de lijst kiezen en verwijderen (vb: een item is aangepast dan kan men de oude versie verwijderen)
+            if (lstLijst.SelectedItem == null) return;
+            {
+
+            }
             lstLijst.Items.RemoveAt(lstLijst.Items.IndexOf(lstLijst.SelectedItem));
 
         }
@@ -56,6 +63,8 @@ namespace WpfPunten
                 lstLijst.Items.Clear();
                
             }
+
+            
         }
     }
 }
