@@ -4,3 +4,4 @@
 
 * WpfFileInfo
 * WpfCopyVs1
+* WpfCopyVs2

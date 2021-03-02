@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{93E92F2F-9B66-4738-91BB-1553185106E3}</ProjectGuid>
+    <ProjectGuid>{8A8F8B95-F648-41CC-B65D-8186646C0084}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>WpfCopyVs2</RootNamespace>
     <AssemblyName>WpfCopyVs2</AssemblyName>
