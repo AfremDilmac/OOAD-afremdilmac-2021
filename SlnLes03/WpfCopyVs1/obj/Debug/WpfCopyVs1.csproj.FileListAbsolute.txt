@@ -1,0 +1,15 @@
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes03\WpfCopyVs1\bin\Debug\WpfCopyVs1.exe.config
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes03\WpfCopyVs1\bin\Debug\WpfCopyVs1.exe
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes03\WpfCopyVs1\bin\Debug\WpfCopyVs1.pdb
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes03\WpfCopyVs1\obj\Debug\WpfCopyVs1.csprojAssemblyReference.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes03\WpfCopyVs1\obj\Debug\MainWindow.g.cs
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes03\WpfCopyVs1\obj\Debug\App.g.cs
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes03\WpfCopyVs1\obj\Debug\WpfCopyVs1_MarkupCompile.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes03\WpfCopyVs1\obj\Debug\WpfCopyVs1_MarkupCompile.lref
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes03\WpfCopyVs1\obj\Debug\MainWindow.baml
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes03\WpfCopyVs1\obj\Debug\WpfCopyVs1.g.resources
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes03\WpfCopyVs1\obj\Debug\WpfCopyVs1.Properties.Resources.resources
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes03\WpfCopyVs1\obj\Debug\WpfCopyVs1.csproj.GenerateResource.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes03\WpfCopyVs1\obj\Debug\WpfCopyVs1.csproj.CoreCompileInputs.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes03\WpfCopyVs1\obj\Debug\WpfCopyVs1.exe
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes03\WpfCopyVs1\obj\Debug\WpfCopyVs1.pdb

@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfCopyVs1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="350" Width="450">
     <Grid>
-        
+        <Label Content="File in:" HorizontalAlignment="Left" Margin="70,62,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.152,0.38"/>
+        <Label Content="File out:" HorizontalAlignment="Left" Margin="70,119,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.152,0.38"/>
+        <TextBox x:Name="boxIn" HorizontalAlignment="Left" Height="23" Margin="141,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214"/>
+        <TextBox x:Name="boxOut" HorizontalAlignment="Left" Height="23" Margin="141,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214"/>
+        <Button x:Name="btnGo" Content="Go!" HorizontalAlignment="Left" Margin="266,194,0,0" VerticalAlignment="Top" Width="89" Height="46" Click="btnGo_Click"/>
+        <Label x:Name="lblUitvoer" Content="" HorizontalAlignment="Left" Margin="191,204,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>

@@ -3,4 +3,4 @@
 ## Voltooid
 
 * WpfFileInfo
-
+* WpfCopyVs1
