@@ -44,7 +44,7 @@ namespace WpfFileInfo
                 lblOutput.Content += $"extensie: {fi.Extension}{Environment.NewLine}";
                 lblOutput.Content += $"gemaakt op: {fi.CreationTime.ToString()}{Environment.NewLine}";
                 lblOutput.Content += $"mapnaam: {fi.Directory.Name}{Environment.NewLine}";
-                lblOutput.Content += $"aantal woorden: {fi.Replace(" ",string.Empty).Length}";
+                lblOutput.Content += $"aantal woorden: {fi.Length}";
             }
             else
             {

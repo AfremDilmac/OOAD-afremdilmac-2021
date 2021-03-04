@@ -9,10 +9,10 @@
     <Grid>
         <Label Content="File in:" HorizontalAlignment="Left" Margin="70,62,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.152,0.38"/>
         <Label Content="File out:" HorizontalAlignment="Left" Margin="70,119,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.152,0.38"/>
-        <TextBox x:Name="boxIn" HorizontalAlignment="Left" Height="23" Margin="141,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214"/>
-        <TextBox x:Name="boxOut" HorizontalAlignment="Left" Height="23" Margin="141,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214"/>
-        <Button x:Name="btnGo" Content="Go!" HorizontalAlignment="Left" Margin="266,194,0,0" VerticalAlignment="Top" Width="89" Height="46" Click="btnGo_Click"/>
-        <Label x:Name="lblUitvoer" Content="" HorizontalAlignment="Left" Margin="191,204,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="boxIn" HorizontalAlignment="Left" Height="23" Margin="141,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="233"/>
+        <TextBox x:Name="boxOut" HorizontalAlignment="Left" Height="23" Margin="141,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="233"/>
+        <Button x:Name="btnGo" Content="Go!" HorizontalAlignment="Left" Margin="251,194,0,0" VerticalAlignment="Top" Width="123" Height="46" Click="btnGo_Click"/>
+        <Label x:Name="lblUitvoer" Content="" HorizontalAlignment="Left" Margin="112,194,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

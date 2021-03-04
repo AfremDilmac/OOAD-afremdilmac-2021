@@ -30,7 +30,7 @@ namespace WpfCompare
         private void btnLoad_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog dialog = new OpenFileDialog();
-            dialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            dialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             dialog.Filter = "Tekstbestanden|*.TXT;*.TEXT";
             string chosenFileName;
             if (dialog.ShowDialog() == true)
@@ -47,6 +47,11 @@ namespace WpfCompare
 
 
             }
+        }
+
+        private void lbxSelect_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
         }
     }
 }

@@ -12,3 +12,4 @@ C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes03\WpfFileInfo\ob
 C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes03\WpfFileInfo\obj\Debug\WpfFileInfo.csproj.CoreCompileInputs.cache
 C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes03\WpfFileInfo\obj\Debug\WpfFileInfo.exe
 C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes03\WpfFileInfo\obj\Debug\WpfFileInfo.pdb
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes03\WpfFileInfo\obj\Debug\WpfFileInfo.csprojAssemblyReference.cache

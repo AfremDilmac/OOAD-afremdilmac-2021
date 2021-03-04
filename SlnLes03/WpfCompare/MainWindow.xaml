@@ -7,9 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListBox x:Name="lbxLines" HorizontalAlignment="Left" Height="186" Margin="26,159,0,0" VerticalAlignment="Top" Width="307" RenderTransformOrigin="-0.015,-0.114"/>
-        <ListBox HorizontalAlignment="Left" Height="186" Margin="430,159,0,0" VerticalAlignment="Top" Width="307" RenderTransformOrigin="-0.015,-0.114"/>
+        <ListBox x:Name="lbxLines" HorizontalAlignment="Left" Height="166" Margin="26,179,0,0" VerticalAlignment="Top" Width="307" RenderTransformOrigin="-0.015,-0.114"/>
+        <ListBox HorizontalAlignment="Left" Height="166" Margin="430,179,0,0" VerticalAlignment="Top" Width="307" RenderTransformOrigin="-0.015,-0.114"/>
         <Button x:Name="btnLoad"  Content="Button" HorizontalAlignment="Left" Margin="323,367,0,0" VerticalAlignment="Top" Width="118" Height="29" Click="btnLoad_Click"/>
+        <ListBox x:Name="lbxSelect" HorizontalAlignment="Left" Height="123" Margin="26,26,0,0" VerticalAlignment="Top" Width="307" SelectionChanged="lbxSelect_SelectionChanged"/>
+        <ListBox HorizontalAlignment="Left" Height="123" Margin="430,26,0,0" VerticalAlignment="Top" Width="307"/>
 
     </Grid>
 </Window>
