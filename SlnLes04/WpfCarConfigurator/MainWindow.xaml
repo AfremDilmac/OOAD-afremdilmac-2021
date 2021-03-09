@@ -1,0 +1,52 @@
+﻿<Window x:Class="WpfCarConfigurator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfCarConfigurator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="180"></ColumnDefinition>
+            <ColumnDefinition Width="280"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="160"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Content="MODEL &amp; KLEUR" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <Label Grid.Row="1" Grid.Column="0" Content="ACCESSOIRES" HorizontalAlignment="Left"  VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="TOTAALPRIJS" HorizontalAlignment="Left"  VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <ComboBox Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="256" Margin="10,5,0,80" SelectionChanged="ComboBox_SelectionChanged">
+                <ComboBoxItem Content="continental V8 (85000 euro)"></ComboBoxItem>
+                <ComboBoxItem Content="convertible (72000 euro)"></ComboBoxItem>
+                <ComboBoxItem Content="mulsanne (65300 euro)"></ComboBoxItem>
+            </ComboBox>
+            <RadioButton Content="RadioButton" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <RadioButton Content="RadioButton" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <RadioButton Content="RadioButton" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <CheckBox x:Name="cbxAudio" Content="Bose audio speakers (+1250 euro)" Grid.Column="1" HorizontalAlignment="Left" Margin="0,5,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+            <CheckBox x:Name="cbxMatjes" Content="Deluxe matjess (+450 euro)" Grid.Column="1" HorizontalAlignment="Left" Margin="0,5,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+            <CheckBox x:Name="cbxVelgen" Content="Aluminium velgen (+300 euro)" Grid.Column="1" HorizontalAlignment="Left" Margin="0,5,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        </StackPanel>
+
+        <Label x:Name="lblPrijs" Content="" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" FontSize="16"/>
+        <StackPanel Grid.Row="1" Grid.Column="2">
+            <Image x:Name="imgAudio" Grid.Column="2" HorizontalAlignment="Left" Height="66"  Grid.Row="1" VerticalAlignment="Top" Width="127" Source="opties_audio.jpg"/>
+            <Image x:Name="imgMatjes" Grid.Column="2" HorizontalAlignment="Left" Height="66"  Grid.Row="1" VerticalAlignment="Top" Width="127" Source="opties_matjes.jpg"/>
+            <Image x:Name="imgVelgen" Grid.Column="2" HorizontalAlignment="Left" Height="66"  Grid.Row="1" VerticalAlignment="Top" Width="127" Source="opties_velgen.jpg"/>
+        </StackPanel>
+        <Image Grid.Column="2" HorizontalAlignment="Left" Height="140" Margin="10,10,0,0" VerticalAlignment="Top" Width="312"/>
+        
+
+
+
+
+    </Grid>
+</Window>
