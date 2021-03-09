@@ -95,13 +95,31 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="opties_audio.jpg" />
+    <Resource Include="color.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="opties_matjes.jpg" />
+    <Resource Include="rims.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="opties_velgen.jpg" />
+    <Resource Include="autopilot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="modelS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Model3.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="modelX.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Model3Black.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Model3Red.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Model3White.JPG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

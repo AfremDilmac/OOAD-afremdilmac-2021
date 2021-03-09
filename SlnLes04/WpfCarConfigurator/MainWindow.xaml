@@ -19,31 +19,31 @@
         </Grid.RowDefinitions>
         <Label Grid.Row="0" Grid.Column="0" Content="MODEL &amp; KLEUR" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
         <Label Grid.Row="1" Grid.Column="0" Content="ACCESSOIRES" HorizontalAlignment="Left"  VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
-        <Label Grid.Row="2" Grid.Column="0" Content="TOTAALPRIJS" HorizontalAlignment="Left"  VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="TOTAALPRIJS" HorizontalAlignment="Left"  VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
         <StackPanel Grid.Row="0" Grid.Column="1">
-            <ComboBox Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="256" Margin="10,5,0,80" SelectionChanged="ComboBox_SelectionChanged">
-                <ComboBoxItem Content="continental V8 (85000 euro)"></ComboBoxItem>
-                <ComboBoxItem Content="convertible (72000 euro)"></ComboBoxItem>
-                <ComboBoxItem Content="mulsanne (65300 euro)"></ComboBoxItem>
+            <ComboBox x:Name="cbxList" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="256" Margin="10,5,0,80" SelectionChanged="ComboBox_SelectionChanged">
+                <ComboBoxItem x:Name="cbxModel3" Content="Tesla Model 3 (38000)"></ComboBoxItem>
+                <ComboBoxItem x:Name="cbxModelS" Content="Tesla Model S (70000 euro)"></ComboBoxItem>
+                <ComboBoxItem x:Name="cbxModelX" Content="Tesla Model X (80000 euro)"></ComboBoxItem>
             </ComboBox>
-            <RadioButton Content="RadioButton" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <RadioButton Content="RadioButton" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <RadioButton Content="RadioButton" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <RadioButton x:Name="rbnBlack" Content="Black (1.050 euro)" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+            <RadioButton x:Name="rbnRed" Content="Red (2.700 euro)" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+            <RadioButton x:Name="rbnWhite" Content="White (1.600 euro)" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
         </StackPanel>
-        <StackPanel Grid.Row="1" Grid.Column="1">
-            <CheckBox x:Name="cbxAudio" Content="Bose audio speakers (+1250 euro)" Grid.Column="1" HorizontalAlignment="Left" Margin="0,5,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-            <CheckBox x:Name="cbxMatjes" Content="Deluxe matjess (+450 euro)" Grid.Column="1" HorizontalAlignment="Left" Margin="0,5,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-            <CheckBox x:Name="cbxVelgen" Content="Aluminium velgen (+300 euro)" Grid.Column="1" HorizontalAlignment="Left" Margin="0,5,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <StackPanel Grid.Row="1" Grid.Column="1" Height="209" VerticalAlignment="Top">
+            <CheckBox x:Name="cbxColor" Content="Interior color (+2.100)" Grid.Column="1" HorizontalAlignment="Left" Margin="0,5,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="cbxColor_Checked"/>
+            <CheckBox x:Name="cbxRims" Content="Rims Arachnid 21 (+4.800 euro)" Grid.Column="1" HorizontalAlignment="Left" Margin="0,5,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="cbxColor_Checked"/>
+            <CheckBox x:Name="cbxPilot" Content="Improved Autopilot (+7.500 euro)" Grid.Column="1" HorizontalAlignment="Left" Margin="0,5,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="cbxColor_Checked"/>
         </StackPanel>
 
-        <Label x:Name="lblPrijs" Content="" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="lblPrijs" Content="" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" FontSize="16" Width="260" Margin="10,9,0,0"/>
         <StackPanel Grid.Row="1" Grid.Column="2">
-            <Image x:Name="imgAudio" Grid.Column="2" HorizontalAlignment="Left" Height="66"  Grid.Row="1" VerticalAlignment="Top" Width="127" Source="opties_audio.jpg"/>
-            <Image x:Name="imgMatjes" Grid.Column="2" HorizontalAlignment="Left" Height="66"  Grid.Row="1" VerticalAlignment="Top" Width="127" Source="opties_matjes.jpg"/>
-            <Image x:Name="imgVelgen" Grid.Column="2" HorizontalAlignment="Left" Height="66"  Grid.Row="1" VerticalAlignment="Top" Width="127" Source="opties_velgen.jpg"/>
+            <Image x:Name="imgInterior" Grid.Column="2" HorizontalAlignment="Left" Height="66"  Grid.Row="1" VerticalAlignment="Top" Width="127" Source="color.jpg"/>
+            <Image x:Name="imgRims" Grid.Column="2" HorizontalAlignment="Left" Height="66"  Grid.Row="1" VerticalAlignment="Top" Width="127" Source="rims.jpg"/>
+            <Image x:Name="imgPilot" HorizontalAlignment="Left" Height="66" VerticalAlignment="Top" Width="127" Source="autopilot.jpg"/>
         </StackPanel>
-        <Image Grid.Column="2" HorizontalAlignment="Left" Height="140" Margin="10,10,0,0" VerticalAlignment="Top" Width="312"/>
-        
+        <Image x:Name="imgGroot" Grid.Column="2" HorizontalAlignment="Left" Height="140" Margin="10,10,0,0" VerticalAlignment="Top" Width="312"/>
+
 
 
 
