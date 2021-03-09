@@ -25,6 +25,7 @@ namespace WpfCarConfigurator
             InitializeComponent();
            
         }
+
         int prijs = 0;
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
