@@ -29,16 +29,19 @@ namespace WpfCarConfigurator
         int prijs = 0;
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            //Hier selecteert men Model3
             if (cbxList.SelectedItem == cbxModel3)
             {
                 imgGroot.Source = new BitmapImage(new Uri("Model3.JPG", UriKind.Relative));
                 prijs += 38000;
             }
+            //Hier selecteert men ModelS
             else if (cbxList.SelectedItem == cbxModelS)
             {
                 imgGroot.Source = new BitmapImage(new Uri("modelS.jpg", UriKind.Relative));
                 prijs += 70000;
             }
+            //Hier selecteert men ModelX
             else if (cbxList.SelectedItem == cbxModelX)
             {
                 imgGroot.Source = new BitmapImage(new Uri("modelX.jpg", UriKind.Relative));
@@ -49,22 +52,57 @@ namespace WpfCarConfigurator
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
-            if (rbnBlack.IsChecked == true)
+            //Color voor ModelX
+            if (cbxList.SelectedItem == cbxModelX && rbnBlack.IsChecked == true)
+            {
+                imgGroot.Source = new BitmapImage(new Uri("ModelXBlack.JPG", UriKind.Relative));
+                prijs += 1050;
+            }
+            if (cbxList.SelectedItem == cbxModelX && rbnRed.IsChecked == true)
+            {
+                imgGroot.Source = new BitmapImage(new Uri("ModelXRed.JPG", UriKind.Relative));
+                prijs += 2700;
+            }
+            if (cbxList.SelectedItem == cbxModelX && rbnWhite.IsChecked == true)
+            {
+                imgGroot.Source = new BitmapImage(new Uri("ModelXWhite.JPG", UriKind.Relative));
+                prijs += 1600;
+            }
+
+            //Color voor Model3
+            if (cbxList.SelectedItem == cbxModel3 && rbnBlack.IsChecked == true)
             {
                 imgGroot.Source = new BitmapImage(new Uri("Model3Black.JPG", UriKind.Relative));
                 prijs += 1050;
             }
-            if (rbnRed.IsChecked == true)
+            if (cbxList.SelectedItem == cbxModel3 && rbnRed.IsChecked == true)
             {
                 imgGroot.Source = new BitmapImage(new Uri("Model3Red.JPG", UriKind.Relative));
                 prijs += 2700;
             }
-            if (rbnWhite.IsChecked == true)
+            if (cbxList.SelectedItem == cbxModel3 && rbnWhite.IsChecked == true)
             {
                 imgGroot.Source = new BitmapImage(new Uri("Model3White.JPG", UriKind.Relative));
                 prijs += 1600;
-                
             }
+
+            //Color voor ModelS
+            if (cbxList.SelectedItem == cbxModelS && rbnBlack.IsChecked == true)
+            {
+                imgGroot.Source = new BitmapImage(new Uri("ModelSBlack.JPG", UriKind.Relative));
+                prijs += 1050;
+            }
+            if (cbxList.SelectedItem == cbxModelS && rbnRed.IsChecked == true)
+            {
+                imgGroot.Source = new BitmapImage(new Uri("ModelSRed.JPG", UriKind.Relative));
+                prijs += 2700;
+            }
+            if (cbxList.SelectedItem == cbxModelS && rbnWhite.IsChecked == true)
+            {
+                imgGroot.Source = new BitmapImage(new Uri("ModelSWhite.JPG", UriKind.Relative));
+                prijs += 1600;
+            }
+
             lblPrijs.Content = prijs + "euro";
         }
 

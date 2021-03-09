@@ -121,5 +121,23 @@
   <ItemGroup>
     <Resource Include="Model3White.JPG" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ModelXBlack.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ModelXRed.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ModelXWhite.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ModelSBlack.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ModelSRed.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ModelSWhite.JPG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
