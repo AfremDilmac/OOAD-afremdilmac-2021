@@ -6,4 +6,4 @@
 * Academiejaar: 2020-2021
 * Docent: Rogier van der Linde
 
-<img src="https://github.com/AfremDilmac/OOAD-afremdilmac-2021/blob/main/Photo%20.PNG">
+<img src="https://i.ibb.co/Ph50zPH/55k9-S0f-O-400x400.png">
