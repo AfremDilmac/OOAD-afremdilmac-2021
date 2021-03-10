@@ -8,8 +8,8 @@
         Title="MainWindow" Height="350" Width="500">
     <DockPanel LastChildFill="True">
         <Menu DockPanel.Dock="Top">
-            <MenuItem Header="_File">
-                <MenuItem Header="_Open..." Click="MenuItem_Click" />
+            <MenuItem Header="_File" Click="MenuItem_Click_1">
+                <MenuItem x:Name="miOpen" Header="_Open..." Click="MenuItem_Click" />
                 <MenuItem Header="_Save" />
                 <MenuItem Header="Save _As..." />
                 <Separator />
@@ -20,8 +20,8 @@
                 <MenuItem Header="Copy" />
                 <MenuItem Header="Paste" />
             </MenuItem>
-            <MenuItem Header="_Help">
-                <MenuItem Header="_About" />
+            <MenuItem Header="_Help" Click="MenuItem_Click_2">
+                <MenuItem Header="_About" Click="MenuItem_Click_2" />
             </MenuItem>
         </Menu>
         <StatusBar DockPanel.Dock="Bottom">

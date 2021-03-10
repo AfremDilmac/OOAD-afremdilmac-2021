@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Deel1A
+namespace WpfDeel1A
 {
     /// <summary>
     /// Logique d'interaction pour MainWindow.xaml
@@ -26,14 +26,6 @@ namespace Deel1A
         {
             InitializeComponent();
         }
-
-        private void exitItem_Click(object sender, RoutedEventArgs e)
-        {
-            // 0 wilt zeggen dat er niets is fout gelopen
-            Environment.Exit(0);
-
-        }
-
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
@@ -55,13 +47,16 @@ namespace Deel1A
             }
         }
 
-        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        private void exitItem_Click(object sender, RoutedEventArgs e)
         {
-
+            // 0 wilt zeggen dat er niets is fout gelopen
+            Environment.Exit(0);
         }
 
-        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
+            Window1 sW = new Window1();
+            sW.Show();
 
         }
     }

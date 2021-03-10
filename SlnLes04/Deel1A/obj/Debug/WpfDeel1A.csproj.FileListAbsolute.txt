@@ -13,3 +13,5 @@ C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes04\Deel1A\obj\Deb
 C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes04\Deel1A\obj\Debug\Deel1A.exe
 C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes04\Deel1A\obj\Debug\Deel1A.pdb
 C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes04\Deel1A\obj\Debug\WpfDeel1A.csprojAssemblyReference.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes04\Deel1A\obj\Debug\Window2.g.cs
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes04\Deel1A\obj\Debug\Deel1B.g.cs

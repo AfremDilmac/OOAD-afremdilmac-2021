@@ -1,0 +1,17 @@
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes04\WpfDeel1A\obj\Debug\MainWindow.g.cs
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes04\WpfDeel1A\obj\Debug\App.g.cs
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes04\WpfDeel1A\obj\Debug\WpfDeel1A_MarkupCompile.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes04\WpfDeel1A\obj\Debug\WpfDeel1A_MarkupCompile.lref
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes04\WpfDeel1A\bin\Debug\WpfDeel1A.exe.config
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes04\WpfDeel1A\bin\Debug\WpfDeel1A.exe
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes04\WpfDeel1A\bin\Debug\WpfDeel1A.pdb
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes04\WpfDeel1A\obj\Debug\WpfDeel1A.csprojAssemblyReference.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes04\WpfDeel1A\obj\Debug\MainWindow.baml
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes04\WpfDeel1A\obj\Debug\WpfDeel1A.g.resources
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes04\WpfDeel1A\obj\Debug\WpfDeel1A.Properties.Resources.resources
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes04\WpfDeel1A\obj\Debug\WpfDeel1A.csproj.GenerateResource.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes04\WpfDeel1A\obj\Debug\WpfDeel1A.csproj.CoreCompileInputs.cache
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes04\WpfDeel1A\obj\Debug\WpfDeel1A.exe
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes04\WpfDeel1A\obj\Debug\WpfDeel1A.pdb
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes04\WpfDeel1A\obj\Debug\Window1.g.cs
+C:\Users\Afrem\Desktop\GITHUB OOAD\OOAD-afremdilmac-2021\SlnLes04\WpfDeel1A\obj\Debug\Window1.baml
