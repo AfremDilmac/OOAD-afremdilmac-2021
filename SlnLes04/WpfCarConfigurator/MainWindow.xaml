@@ -31,9 +31,9 @@
             <RadioButton x:Name="rbnWhite" Content="White (1.600 euro)" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="1" Height="209" VerticalAlignment="Top">
-            <CheckBox x:Name="cbxColor" Content="Interior color (+2.100)" Grid.Column="1" HorizontalAlignment="Left" Margin="0,5,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="cbxColor_Checked"/>
-            <CheckBox x:Name="cbxRims" Content="Rims Arachnid 21 (+4.800 euro)" Grid.Column="1" HorizontalAlignment="Left" Margin="0,5,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="cbxColor_Checked"/>
-            <CheckBox x:Name="cbxPilot" Content="Improved Autopilot (+7.500 euro)" Grid.Column="1" HorizontalAlignment="Left" Margin="0,5,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="cbxColor_Checked"/>
+            <CheckBox x:Name="cbxColor" Content="Interior color (+2.100)" Grid.Column="1" HorizontalAlignment="Left" Margin="0,5,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="cbxColor_Checked" Unchecked="cbxColor_Unchecked"/>
+            <CheckBox x:Name="cbxRims" Content="Rims Arachnid 21 (+4.800 euro)" Grid.Column="1" HorizontalAlignment="Left" Margin="0,5,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="cbxColor_Checked" Unchecked="cbxRims_Unchecked"/>
+            <CheckBox x:Name="cbxPilot" Content="Improved Autopilot (+7.500 euro)" Grid.Column="1" HorizontalAlignment="Left" Margin="0,5,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="cbxColor_Checked" Unchecked="cbxPilot_Unchecked"/>
         </StackPanel>
 
         <Label x:Name="lblPrijs" Content="" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" FontSize="16" Width="260" Margin="10,0,0,0"/>

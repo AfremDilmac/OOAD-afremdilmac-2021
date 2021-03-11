@@ -164,5 +164,33 @@ namespace WpfCarConfigurator
             lblPrijs.Content = prijs + "euro";
         }
 
+        private void cbxColor_Unchecked(object sender, RoutedEventArgs e)
+        {
+            if (cbxColor.IsChecked == false)
+            {
+                imgInterior.Opacity = 0.3;
+                prijs -= 2100;
+            } 
+        }
+
+        private void cbxRims_Unchecked(object sender, RoutedEventArgs e)
+        {
+            if (cbxRims.IsChecked == false)
+            {
+                imgRims.Opacity = 0.3;
+                prijs -= 4800;
+            }
+            
+        }
+
+        private void cbxPilot_Unchecked(object sender, RoutedEventArgs e)
+        {
+            if (cbxPilot.IsChecked == false)
+            {
+                imgPilot.Opacity = 0.3;
+                prijs -= 7500;
+            }
+            
+        }
     }
 }
