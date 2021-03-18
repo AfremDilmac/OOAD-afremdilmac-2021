@@ -32,9 +32,6 @@ namespace WpfDeel1A
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
             //Open
-
-           
-
             if (tbxContent.Text != "")
             {
                 var Result = MessageBox.Show($"Als je nu het programma verlaat, gaan wijzingen verloren", "Warning !", MessageBoxButton.OKCancel, MessageBoxImage.Warning);
