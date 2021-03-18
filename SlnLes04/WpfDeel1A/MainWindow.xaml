@@ -10,16 +10,17 @@
         <DockPanel LastChildFill="True">
             <Menu DockPanel.Dock="Top">
                 <MenuItem Header="_File">
+                    <MenuItem x:Name="miNew" Header="New" Click="miNew_Click"></MenuItem>
                     <MenuItem x:Name="miOpen" Header="_Open..." Click="MenuItem_Click" />
-                    <MenuItem Header="_Save" />
-                    <MenuItem Header="Save _As..." />
+                    <MenuItem x:Name="miSave" Header="_Save" Click="miSave_Click" />
+                    <MenuItem x:Name="miSaveAs" Header="Save _As..." Click="miSaveAs_Click" />
                     <Separator />
                     <MenuItem Header="E_xit" Click="exitItem_Click" />
                 </MenuItem>
                 <MenuItem Header="Edit">
-                    <MenuItem Header="Cut" />
-                    <MenuItem Header="Copy" />
-                    <MenuItem Header="Paste" />
+                    <MenuItem x:Name="miCut" Header="Cut" Click="MenuItem_Click_3" />
+                    <MenuItem x:Name="miCopy" Header="Copy" Click="MenuItem_Click_2" />
+                    <MenuItem x:Name="miPaste" Header="Paste" Click="MenuItem_Click_4" />
                 </MenuItem>
                 <MenuItem Header="_Help">
                     <MenuItem Header="_About" Click="MenuItem_Click_1" />
@@ -30,9 +31,9 @@
             </StatusBar>
             <Grid>
                 <TabControl TabStripPlacement="Top">
-                    <TabItem Header="Untitled">
+                    <TabItem x:Name="tiTitle" Header="Untitled" Height="22" VerticalAlignment="Top">
                         <ScrollViewer>
-                            <TextBox x:Name="tbxContent" TextWrapping="Wrap" AcceptsReturn="True"></TextBox>
+                            <TextBox x:Name="tbxContent" TextWrapping="Wrap" AcceptsReturn="True" SelectionChanged="tbxContent_SelectionChanged"></TextBox>
                         </ScrollViewer>
                     </TabItem>
                 </TabControl>
