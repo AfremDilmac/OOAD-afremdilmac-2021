@@ -1,6 +1,6 @@
 # OOAD-afremdilmac-2021
 
-## ConsoleKaartspel1
+## Verbetering
+ConsoleKaartspel1 voltooid
 
-1/3 gemaakt.
 
