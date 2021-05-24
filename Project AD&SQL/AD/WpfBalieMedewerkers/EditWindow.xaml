@@ -1,0 +1,47 @@
+﻿<Window x:Class="WpfBalieMedewerkers.EditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBalieMedewerkers"
+        mc:Ignorable="d"
+        Title="EditWindow" Height="450" Width="800">
+    <Grid Margin="20,20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Label Content="Voornaam: "/>
+        <TextBox Grid.Column="1" x:Name="txtFirst" Margin="0,0,0,10" Padding="5" />
+        <Label Grid.Row="1" Content="Achternaam: "/>
+        <TextBox Grid.Column="1" Grid.Row="1" x:Name="txtLast" Margin="0,0,0,10" Padding="5" />
+        <Label Grid.Row="2" Content="Geboortedatum: "/>
+        <TextBox Grid.Column="1" Grid.Row="2"  x:Name="txtEmail" Margin="0,0,0,10" Padding="5" />
+        <Label Grid.Row="3" Content="Telefoon: "/>
+        <TextBox Grid.Column="1" Grid.Row="3"  x:Name="txtTel" Margin="0,0,0,10" Padding="5" />
+        <Label Grid.Row="4" Content="Geboortedatum: "/>
+        <TextBox Grid.Column="1" Grid.Row="4"  x:Name="txtgeboortedatum" Margin="0,0,0,10" Padding="5" />
+        <Label Grid.Row="5" Content="Birthdate: "/>
+        <DatePicker x:Name="datBirth" Grid.Column="1" Grid.Row="5" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top"/>
+        <Label Grid.Row="6" Content="Geslacht: "/>
+        <StackPanel Grid.Column="1" Grid.Row="6">
+            <RadioButton GroupName="grpGender" x:Name="rbnMale" Content="man" />
+            <RadioButton GroupName="grpGender" x:Name="rbnFemale" Content="vrouw" />
+            <RadioButton GroupName="grpGender" x:Name="rbnUnknown" Content="onbekend" />
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="btnSave" Content="opslaan" Padding="10,5" VerticalAlignment="Bottom" Click="btnSave_Click" />
+            <Button x:Name="btnCancel" Content="annuleren" Margin="10,0,0,0" Padding="10,5" VerticalAlignment="Bottom" Click="btnCancel_Click" />
+        </StackPanel>
+
+    </Grid>
+</Window>
