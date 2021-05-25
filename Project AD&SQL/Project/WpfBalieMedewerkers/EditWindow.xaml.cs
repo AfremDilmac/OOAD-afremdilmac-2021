@@ -36,6 +36,13 @@ namespace WpfBalieMedewerkers
             emp = Library.FindById(id);
             txtFirst.Text = emp.Voornaam;
             txtLast.Text = emp.Achternaam;
+            txtLidnummer.Text = emp.Lidnummer;
+            datBirth.SelectedDate = emp.Geboortedatum; ;
+            txtStraat.Text = emp.Straat;
+            txtPostcode.Text = emp.Postcode;
+            txtGemeente.Text = emp.Gemeente;
+            txtTel.Text = emp.Gsm;
+            datLidkaart.SelectedDate = emp.vervaldatum_lidkaart;
         }
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)
@@ -49,6 +56,13 @@ namespace WpfBalieMedewerkers
             {
                 emp.Voornaam = txtFirst.Text;
                 emp.Achternaam = txtLast.Text;
+                emp.Lidnummer = txtLidnummer.Text;
+                emp.Geboortedatum = datBirth.SelectedDate;
+                emp.Straat = txtStraat.Text;
+                emp.Postcode = txtPostcode.Text;
+                emp.Gemeente = txtGemeente.Text;
+                emp.Gsm = txtTel.Text;
+                emp.vervaldatum_lidkaart = datLidkaart.SelectedDate;
                 emp.UpdateInDb();
             }
 

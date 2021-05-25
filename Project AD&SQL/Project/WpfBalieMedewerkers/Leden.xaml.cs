@@ -113,7 +113,9 @@ namespace WpfBalieMedewerkers
 
         private void btnNew_Click(object sender, RoutedEventArgs e)
         {
-            Insert newWin = new Insert(this);
+            ListBoxItem item = (ListBoxItem)lbxResults.SelectedItem;
+            int employeeId = Convert.ToInt32(item.Tag);
+            Insert newWin = new Insert(this, employeeId);
             newWin.Show();
         }
     }

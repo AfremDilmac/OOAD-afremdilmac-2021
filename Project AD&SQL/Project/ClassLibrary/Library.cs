@@ -17,12 +17,12 @@ namespace ClassLibrary
         public string Lidnummer {get; set;}
         public string Voornaam { get; set; }
         public string Achternaam { get; set; }
-        public DateTime Geboortedatum { get; set; }
+        public DateTime? Geboortedatum { get; set; }
         public string Straat { get; set; }
         public string Nummer { get; set; }
         public string Postcode { get; set; }
         public string Gemeente { get; set; }
-        public DateTime vervaldatum_lidkaart { get; set; }
+        public DateTime? vervaldatum_lidkaart { get; set; }
         public string Gsm { get; set; }
 
         //methodes
@@ -120,11 +120,37 @@ namespace ClassLibrary
                 conn.Open();
                 SqlCommand comm = new SqlCommand(
                     @"UPDATE Lid
-                        SET voornaam=@parF, achternaam=@parL
+                        SET voornaam=@par1, achternaam=@par2, geboortedatum=@par3, straat=@par4, nummer=@par5, postcode=@par6, gemeente=@par7, vervaldatum_lidkaart=@par8, gsm=@par9
                         WHERE lidnummer = @parID"
                     , conn);
-                comm.Parameters.AddWithValue("@parF", Voornaam);
-                comm.Parameters.AddWithValue("@parL", Achternaam);
+                comm.Parameters.AddWithValue("@par1", Voornaam);
+                comm.Parameters.AddWithValue("@par2", Achternaam);
+                if (Geboortedatum == null)
+                {
+                    comm.Parameters.AddWithValue("@par3", DBNull.Value);
+
+                }
+                else
+                {
+                    comm.Parameters.AddWithValue("@par3", Geboortedatum);
+                }
+
+                if (vervaldatum_lidkaart == null)
+                {
+                    comm.Parameters.AddWithValue("@par8", DBNull.Value);
+                }
+
+                else
+                {
+                    comm.Parameters.AddWithValue("@par8", vervaldatum_lidkaart);
+                }
+
+                comm.Parameters.AddWithValue("@par4", Straat);
+                comm.Parameters.AddWithValue("@par5", Nummer);
+                comm.Parameters.AddWithValue("@par6", Postcode);
+                comm.Parameters.AddWithValue("@par7", Gemeente);
+                comm.Parameters.AddWithValue("@par9", Gsm);
+                comm.Parameters.AddWithValue("@par10", Lidnummer);
                 comm.Parameters.AddWithValue("@parID", Lidnummer);
                 comm.ExecuteNonQuery();
             }
@@ -138,12 +164,29 @@ namespace ClassLibrary
                   "INSERT INTO Lid(voornaam,achternaam,geboortedatum,straat,nummer,postcode,gemeente,vervaldatum_lidkaart,gsm, lidnummer) VALUES(@par1,@par2,@par3,@par4,@par5,@par6,@par7,@par8, @par9, @par10)", conn);
                 comm.Parameters.AddWithValue("@par1", Voornaam);
                 comm.Parameters.AddWithValue("@par2", Achternaam);
-                comm.Parameters.AddWithValue("@par3", Geboortedatum);
+                if (Geboortedatum == null)
+                {
+                    comm.Parameters.AddWithValue("@par3", DBNull.Value);
+
+                }
+                else {
+                    comm.Parameters.AddWithValue("@par3", Geboortedatum);
+                }
+
+                if (vervaldatum_lidkaart == null)
+                {
+                    comm.Parameters.AddWithValue("@par8", DBNull.Value);
+                }
+
+                else
+                {
+                    comm.Parameters.AddWithValue("@par8", vervaldatum_lidkaart);
+                }
+
                 comm.Parameters.AddWithValue("@par4", Straat);
                 comm.Parameters.AddWithValue("@par5", Nummer);
                 comm.Parameters.AddWithValue("@par6", Postcode);
                 comm.Parameters.AddWithValue("@par7", Gemeente);
-                comm.Parameters.AddWithValue("@par8", vervaldatum_lidkaart);
                 comm.Parameters.AddWithValue("@par9", Gsm);
                 comm.Parameters.AddWithValue("@par10", Lidnummer);
                 comm.ExecuteNonQuery();
@@ -162,7 +205,7 @@ namespace ClassLibrary
             Achternaam = an;
         }
 
-        public Library(string lidnummer, string vn, string an, DateTime geboortedatum, string straat, string nummer, string postcode, string gemeente, DateTime vervaldatum_lidkaart, string gsm) : this(lidnummer, vn, an)
+        public Library(string lidnummer, string vn, string an, DateTime? geboortedatum, string straat, string nummer, string postcode, string gemeente, DateTime? vervaldatum_lidkaart, string gsm) : this(lidnummer, vn, an)
         {
             Geboortedatum = geboortedatum;
             Straat = straat;
@@ -173,7 +216,7 @@ namespace ClassLibrary
             Gsm = gsm;
         }
 
-        public Library(string firstname, string lastname, DateTime geboortedatum, DateTime vervaldatum_lidkaart, string straat, string nummer, string postcode, string gemeente, string gsm)
+        public Library(string firstname, string lastname, DateTime? geboortedatum, DateTime? vervaldatum_lidkaart, string straat, string nummer, string postcode, string gemeente, string gsm)
         {
             this.Voornaam = firstname;
             this.Achternaam = lastname;

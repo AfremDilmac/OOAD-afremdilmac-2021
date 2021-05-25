@@ -24,14 +24,15 @@ namespace WpfBalieMedewerkers
     {
         // referentie naar hoofdvenster
         Medewerker mainWin;
-        Library leed;
+        Library emp;
 
         // connectiestring nodig om te connecteren met de databank
         string connString = ConfigurationManager.AppSettings["connString"];
-        public Insert(Medewerker mainWin)
+        public Insert(Medewerker mainWin, int id)
         {
             InitializeComponent();
             this.mainWin = mainWin;
+            emp = Library.FindById(id);
         }
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)
@@ -44,23 +45,23 @@ namespace WpfBalieMedewerkers
         {
             using (SqlConnection conn = new SqlConnection(connString))
             {
-                leed.Lidnummer = txtLidnummer.Text;
-                leed.Gsm = txtGsm.Text;
-                leed.Gemeente = txtGemeente.Text;
-                leed.Achternaam = txtLast.Text;
-                leed.Nummer = txtNummer.Text;
-                leed.Postcode = txtPostcode.Text;
-                leed.Straat = txtStraat.Text;
+                emp.Lidnummer = txtLidnummer.Text;
+                emp.Gsm = txtGsm.Text;
+                emp.Gemeente = txtGemeente.Text;
+                emp.Achternaam = txtLast.Text;
+                emp.Nummer = txtNummer.Text;
+                emp.Postcode = txtPostcode.Text;
+                emp.Straat = txtStraat.Text;
 
 
-                DateTime geboortedatum = leed.Geboortedatum;
-                DateTime vervaldatum_lidkaart = leed.vervaldatum_lidkaart;
-                leed.InsertInDb();
+                DateTime geboortedatum = (DateTime)emp.Geboortedatum;
+                DateTime vervaldatum_lidkaart = (DateTime)emp.vervaldatum_lidkaart;
+                emp.InsertInDb();
             }
 
 
             // herlaad hoofdvenster, en sluit dit venster
-            mainWin.ReloadEmployees(leed.Lidnummer);
+            mainWin.ReloadEmployees(emp.Lidnummer);
             this.Close();
         }
     }

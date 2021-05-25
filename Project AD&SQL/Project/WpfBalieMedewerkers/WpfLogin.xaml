@@ -19,9 +19,9 @@
         <Image Grid.Row="0" Grid.Column="1" Source="download.gif" ></Image>
         <StackPanel Grid.Row="1" Grid.Column="1">
             <Label Content="Gebruikersnaam:" Foreground="White"/>
-            <TextBox x:Name="tbxGebruikersnaam" Height="23" TextWrapping="Wrap" Text=""/>
+            <TextBox x:Name="tbxGebruikersnaam" Height="23" TextWrapping="Wrap" Text="6471"/>
             <Label Content="Wachtwoord:" Foreground="White"/>
-            <PasswordBox x:Name="tbxWachtwoord" Height="23"/>
+            <PasswordBox x:Name="tbxWachtwoord" Height="23" Password="kantoor"/>
             <Button Background="#FF833636" Foreground="White" BorderBrush="Black" x:Name="btnLogin" Margin="0,20,0,0" Content="Inloggen" FontSize="14" Click="Button_Click"/>
             <Label Margin="0,20,0,0" x:Name="lblError" VerticalAlignment="Center" HorizontalAlignment="Left" />
         </StackPanel>

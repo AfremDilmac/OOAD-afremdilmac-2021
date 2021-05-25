@@ -157,6 +157,42 @@
       <Project>{ba1ad1fb-b881-47b5-908c-56a5ac35f04e}</Project>
       <Name>ClassLibrary</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ItemsLibrary\ItemsLibrary.csproj">
+      <Project>{4803a462-312f-48a3-ab10-3552d4189937}</Project>
+      <Name>ItemsLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Analog.jpg" />
+    <Resource Include="Image\Dragers.png" />
+    <Resource Include="Image\Forbes.jpg" />
+    <Resource Include="Image\Gevangene.jpg" />
+    <Resource Include="Image\Haaiman.jpg" />
+    <Resource Include="Image\Harvard.jpg" />
+    <Resource Include="Image\Honderd.png" />
+    <Resource Include="Image\Jager.png" />
+    <Resource Include="Image\Jokkende.jpg" />
+    <Resource Include="Image\kiekeboes.jpg" />
+    <Resource Include="Image\kwakende.jpg" />
+    <Resource Include="Image\Maximum.jpg" />
+    <Resource Include="Image\MIT.jpg" />
+    <Resource Include="Image\Newbeauty.jpg" />
+    <Resource Include="Image\NewYork.jpg" />
+    <Resource Include="Image\Ragdoll.jpg" />
+    <Resource Include="Image\Riskante.png" />
+    <Resource Include="Image\Schiet.jpg" />
+    <Resource Include="Image\Science.jpg" />
+    <Resource Include="Image\Sfinx.jpg" />
+    <Resource Include="Image\Sprakeloos.png" />
+    <Resource Include="Image\strand.png" />
+    <Resource Include="Image\superior.jpg" />
+    <Resource Include="Image\Taxi.jpg" />
+    <Resource Include="Image\Versplinterd.jpg" />
+    <Resource Include="Image\Vindhaar.jpg" />
+    <Resource Include="Image\Wallstreet.jpg" />
+    <Resource Include="Image\Weerwolf.jpg" />
+    <Resource Include="Image\Yoga.jpg" />
+    <Resource Include="Image\Zondagochtend.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
