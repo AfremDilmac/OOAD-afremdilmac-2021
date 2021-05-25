@@ -147,8 +147,6 @@ create table Boek
 	constraint UK_Boek_isbn unique (isbn)
 )
 
-
-
 /*Invoer tabellen*/
 /*ITEM*/
 INSERT INTO Item (titel, beschrijving, coverfoto, uitgeverij, leeftijd_van, leeftijd_tot, taal)
@@ -164,8 +162,8 @@ VALUES
 	   ('De dragers van het Eikenblad', 'Als het lente wordt, kunnen Will en Evanlyn eindelijk ontsnappen uit Skandia. Dan wordt Evanlyn ontvoerd door mysterieuze ruiters die het op de Skandie?¨rs hebben gemunt. Vanaf ca. 11 jaar.', (select * from openrowset(bulk 'C:\Users\Afrem\Desktop\CASUS AD&SQL\images\Dragers.png', single_blob) as boek8),'Gottmer', NULL, NULL, 'NL'),
 	   ('Honderd jaar eenzaamheid', 'Ontstaan, bloei en verval van het geslacht der Buendia s in de door hen gestichte stad Macondo.', (select * from openrowset(bulk 'C:\Users\Afrem\Desktop\CASUS AD&SQL\images\Honderd.png', single_blob) as boek9),'Meulenhoff', NULL, NULL, 'NL'),
 	   ('Zondagochtend breekt aan', 'De Engelse psychotherapeute Frieda Klein, in wier huis een lijk is ontdekt, komt tijdens haar speurtocht naar de dader met haar vrienden in tal van beklemmende en verbijsterende situaties terecht.', (select * from openrowset(bulk 'C:\Users\Afrem\Desktop\CASUS AD&SQL\images\Zondagochtend.png', single_blob) as boek10),'Ambo|Anthos', NULL, NULL, 'NL'),
-
-	   /*Tijdschriften*/
+		   
+	      /*Tijdschriften*/
 	   ('Science News', 'Science News offers readers bold, contemporary, award-winning editorial content and detailed imagery. Concise, current and comprehensive, the magazine provides an approachable overview from all fields and applications of science and technology.', (select * from openrowset(bulk 'C:\Users\Afrem\Desktop\CASUS AD&SQL\images\Science.jpg', single_blob) as tijdschrift1),'Society for Science & the Public', NULL, NULL, 'EN'),
 	   ('Maximum PC', 'Maximum PC is the go-to resource for PC enthusiasts. Every issue is chock-full of the latest computer technology news, reviews of the hottest hardware, detailed how-to projects, and in-depth feature stories aimed at hardcore computer hobbyists and anyone else who wants to learn how to do more with their PC.', (select * from openrowset(bulk 'C:\Users\Afrem\Desktop\CASUS AD&SQL\images\Maximum.jpg', single_blob) as tijdschrift2),'Future Publishing Ltd', NULL, NULL, 'EN'),
 	   ('Harvard Business Review', 'For over 80 years, Harvard Business Review magazine has been an indispensable and unrivaled source of ideas, insight, and inspiration for business leaders worldwide. Each issue contains breakthrough ideas on strategy, leadership, innovation and management. Become a more effective leader by subscribing to Harvard Business Review.', (select * from openrowset(bulk 'C:\Users\Afrem\Desktop\CASUS AD&SQL\images\Harvard.jpg', single_blob) as tijdschrift3),'Harvard Business School Publishing', NULL, NULL, 'EN'),
@@ -176,7 +174,7 @@ VALUES
 	   ('Analog Science Fiction and Fact', 'Analog Science Fiction and Fact Magazine brings together celebrated authors, new talent, and award-winning stories, poems, and articles, as it has since its launch in 1930.',(select * from openrowset(bulk 'C:\Users\Afrem\Desktop\CASUS AD&SQL\images\Analog.jpg', single_blob) as tijdschrift8),'Dell Magazines', NULL, NULL, 'EN'),
 	   ('Forbes', 'Forbes magazine names the richest people and the biggest companies and covers global business stories with insight, solid sourcing, and the sort of groupie zeal usually reserved for fanzines. No merger, new ad campaign, or lawsuit goes unnoticed and stories always focus on the movers who are shaking things up. Read Forbes to make sense of todays volatile market or just for the sheer pleasure of reading good reporting.',(select * from openrowset(bulk 'C:\Users\Afrem\Desktop\CASUS AD&SQL\images\Forbes.jpg', single_blob) as tijdschrift9),'Forbes', NULL, NULL, 'EN'),
 	   ('The New York Times Book Review', 'The New York Times Book Review has been one of the most influential and widely read book review publications in the industry since its first publication in 1896. Reviewers select 20-30 notable or important new titles each week, including exceptional new authors. Now, join book lovers and professionals in subscribing to the stand alone Book Review.', (select * from openrowset(bulk 'C:\Users\Afrem\Desktop\CASUS AD&SQL\images\NewYork.jpg', single_blob) as tijdschrift10),'The New York Times Company', NULL, NULL, 'EN'),
-
+	   
 	   /*Stripboeken*/
 	   ('Haaiman', 'Een verwisseling van fototoestellen voor het Epcot-center in Florida, de bizarre Holy Hamburger Movement-beweging, een wrak van een schip met juwelen van een oliesjeik en het nieuwe vriendje van Fanny dat in een haai transformeert: dit lijken wel elementen voor een Kiekeboe-verhaal van een beginnend scenarist.', (select * from openrowset(bulk 'C:\Users\Afrem\Desktop\CASUS AD&SQL\images\Haaiman.jpg', single_blob) as stripboek1),'Merho', NULL, NULL, 'NL'),
 	   ('De jokkende joker', 'Tijdens een bezoek aan het poppentheater van Moe Marionet wordt Wiske omgetoverd in een houten pop. Om weer in een meisje van vlees en bloed veranderen, moet ze Komedie en Tragedie terug naar hun poppenkast in het poppenwoud brengen. Deze twee handpoppen zijn de heersers over de magie van het poppenspel en worden ook door Moe Marionet gevangen gehouden. Suske helpt Wiske, Komedie en Tragedie ontsnappen en samen storten ze zich in een fantastisch avontuur, achternagezeten door Moe Marionet', (select * from openrowset(bulk 'C:\Users\Afrem\Desktop\CASUS AD&SQL\images\Jokkende.jpg', single_blob) as stripboek2),'Standaard Uitgeverij', NULL, NULL, 'NL'),
@@ -187,9 +185,7 @@ VALUES
 	   ('Taxi comitée', 'Als Kiekeboe door zijn baas Van de Kasseien ontslagen wordt, moet hij op zoek naar een andere job. Hij wordt chauffeur bij taxibedrijf Taxi Comitée. Zo komt hij in aanraking met de duistere kanten van het nachtleven in de grootstad.', (select * from openrowset(bulk 'C:\Users\Afrem\Desktop\CASUS AD&SQL\images\Taxi.jpg', single_blob) as stripboek7),'Standaard Uitgeveri', NULL, NULL, 'NL'),
 	   ('De kwakende queen', 'Barabas is erg aangedaan als hij ontdekt dat zijn voorvader beschuldigd werd van een vreselijke misdaad. Diezelfde overgrootvader beweert echter onschuldig te zijn. Barabas stuurt zijn vrienden naar het verleden om de zaak op te helderen.', (select * from openrowset(bulk 'C:\Users\Afrem\Desktop\CASUS AD&SQL\images\Kwakende.jpg', single_blob) as stripboek8),'Standaard Uitgeverij', NULL, NULL, 'NL'),
 	   ('De hoed van Robin', 'De buurt van de Kiekeboes wordt geplaagd door een golf van inbraken. Volgens inspecteur Sapperdeboere is dit het werk van de Bende van de Gladde Paling, die voor de politie ongrijpbaar is. Kiekeboe neemt geen risicos en installeert een alarmsysteem, dat echter niet feilloos werkt.', (select * from openrowset(bulk 'C:\Users\Afrem\Desktop\CASUS AD&SQL\images\kiekeboes.jpg', single_blob) as stripboek9),'Merho', NULL, NULL, 'NL'),
-	   ('The Superior Spider-Man', 'Wanneer burgemeester J. Jonah Jameson publiek vernederd wordt door Jester en Screwball roept hij de hulp in van Spider-Man. Otto Octavius, nog altijd in het lichaam van Peter Parker, gaat achter de twee misdadigers aan en neemt ze te grazen.', (select * from openrowset(bulk 'C:\Users\Afrem\Desktop\CASUS AD&SQL\images\Superior.jpg', single_blob) as stripboek10),'Standaard Uitgeverij', NULL, NULL, 'NL');
-
-
+	   ('The Superior Spider-Man', 'Wanneer burgemeester J. Jonah Jameson publiek vernederd wordt door Jester en Screwball roept hij de hulp in van Spider-Man. Otto Octavius, nog altijd in het lichaam van Peter Parker, gaat achter de twee misdadigers aan en neemt ze te grazen.', (select * from openrowset(bulk 'C:\Users\Afrem\Desktop\CASUS AD&SQL\images\Superior.jpg', single_blob) as stripboek10),'Standaard Uitgeverij', NULL, NULL, 'NL')
 
 /*Exemplaar*/
 INSERT INTO Exemplaar(nummer, item_id)
