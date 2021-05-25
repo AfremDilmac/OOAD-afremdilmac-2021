@@ -10,40 +10,47 @@
 
     <Grid Background="#FFA45D5D">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="250"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="125"></ColumnDefinition>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition Width="90"></ColumnDefinition>
+            <ColumnDefinition Width="200"></ColumnDefinition>
             <ColumnDefinition Width="125"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="60"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="210"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
             <RowDefinition Height="100"></RowDefinition>
             <RowDefinition Height="50"></RowDefinition>
         </Grid.RowDefinitions>
-        <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="3" x:Name="Main" Margin="10" NavigationUIVisibility="Hidden"/>
+        <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="5" x:Name="Main" Margin="10,10,-187,10" NavigationUIVisibility="Hidden"/>
         <Image x:Name="imgHome" Grid.Column="1" HorizontalAlignment="Center" Height="80" Width="200" Grid.Row="0" VerticalAlignment="Center" Source="download.gif"/>
         <Button Grid.Row="0" Grid.Column="2" x:Name="btnReload" MinWidth="121" MinHeight="34" Margin="0,5"  Background="#FF833636" Content="Reload" Foreground="White" BorderBrush="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Button Grid.Row="0" Grid.Column="0" x:Name="btnHome" MinWidth="121" MinHeight="34" Margin="0,5"  Background="#FF833636" Content="Home" Foreground="White" BorderBrush="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <ListBox x:Name="lstBox" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Hidden" Grid.RowSpan="2"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="10,10,0,0" HorizontalAlignment="Left" MinHeight="307" MinWidth="450"  SelectionChanged="lbxResults_SelectionChanged" Background="#FF833636" Foreground="White" BorderBrush="Black" VerticalAlignment="Top" Width="530" Height="320">
+        <ListBox x:Name="lstBox" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Hidden"  Grid.Row="1" Grid.Column="0" Margin="10,10,0,0" HorizontalAlignment="Left" SelectionChanged="lbxResults_SelectionChanged" Background="#FF833636" Foreground="White" BorderBrush="Black" VerticalAlignment="Top" Width="263">
             <WrapPanel x:Name="wrpPanel" Height="310" Width="520"></WrapPanel>
         </ListBox>
-        <StackPanel Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2"  Background="#FFA45D5D">
+        <StackPanel Grid.Row="1" Grid.Column="1" Background="#FFA45D5D">
             <Label Content="Titel:" FontWeight="Bold" FontSize="14"/>
-            <Label Content="Beschrijving:" FontWeight="Bold" FontSize="14"/>
             <Label Content="Uitgeverij:" FontWeight="Bold" FontSize="14"/>
             <Label Content="Leeftijd van:" FontWeight="Bold" FontSize="14"/>
             <Label Content="Leeftijd tot:" FontWeight="Bold" FontSize="14"/>
             <Label Content="Taal:" FontWeight="Bold" FontSize="14"/>
         </StackPanel>
-        <StackPanel Grid.Row="1" Grid.Column="3">
+        <Label Grid.Row="2" Content="Beschrijving:" FontWeight="Bold" FontSize="14"/>
+        <StackPanel Grid.Row="1" Grid.Column="2">
             <Label Foreground="White" x:Name="lblTitel" FontSize="12" FontWeight="Bold"/>
-            <Label Margin="0,20,0,0" Foreground="White" x:Name="lblUitgeverij" FontSize="12" FontWeight="Bold"/>
-            <Label Margin="15,2,0,5" Foreground="White" x:Name="lblLeeftijdVan" FontSize="12" FontWeight="Bold"/>
-            <Label Margin="0,0,0,0" Foreground="White" x:Name="lblLeeftijdTot" FontSize="12" FontWeight="Bold"/>
+            <Label Margin="0,0,0,0" Foreground="White" x:Name="lblUitgeverij" FontSize="12" FontWeight="Bold"/>
+            <Label Margin="0,10,0,0" Foreground="White" x:Name="lblLeeftijdVan" FontSize="12" FontWeight="Bold"/>
+            <Label Margin="0,5,0,0" Foreground="White" x:Name="lblLeeftijdTot" FontSize="12" FontWeight="Bold"/>
             <Label Margin="0,0,0,0" Foreground="White" x:Name="lblTaal" FontSize="12" FontWeight="Bold"/>
         </StackPanel>
-        <Label Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Foreground="White" x:Name="lblBeschrijving" FontSize="12" FontWeight="Bold"/>
-
+        <StackPanel Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3">
+            <TextBlock TextWrapping="WrapWithOverflow" Margin="0,0,0,0" Foreground="White" x:Name="lblBeschrijving" FontSize="12" FontWeight="Bold" Height="46"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="3">
+            <Button Grid.Row="0" Grid.Column="0" x:Name="btnInsert" MinWidth="121" MinHeight="34" Margin="0,20,0,0"  Background="#FF833636" Content="Insert" Foreground="White" BorderBrush="Black" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnInsert_Click"/>
+            <Button Grid.Row="0" Grid.Column="0" x:Name="btnModify" MinWidth="121" MinHeight="34" Margin="0,20,0,0"  Background="#FF833636" Content="Modify" Foreground="White" BorderBrush="Black" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnModify_Click"/>
+            <Button Grid.Row="0" Grid.Column="0" x:Name="btnDelete" MinWidth="121" MinHeight="34" Margin="0,20,0,0"  Background="#FF833636" Content="Delete" Foreground="White" BorderBrush="Black" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnDelete_Click"/>
+        </StackPanel>
     </Grid>
 </Page>

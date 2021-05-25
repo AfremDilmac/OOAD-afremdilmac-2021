@@ -21,8 +21,8 @@ namespace ItemsLibrary
         public string Beschrijving { get; set; }
         public Byte[] Coverfoto { get; set; }
         public string Uitgeverij { get; set; }
-        public int Leeftijd_van { get; set; }
-        public int Leeftijd_tot { get; set; }
+        public int? Leeftijd_van { get; set; }
+        public int? Leeftijd_tot { get; set; }
         public string Taal { get; set; }
 
 
@@ -36,7 +36,7 @@ namespace ItemsLibrary
             Titel = titel;
             Beschrijving = beschrijving;
         }
-        public BibItems(int id, string titel, string beschrijving, string uitgeverij, int leeftijd_van, int leeftijd_tot, string taal) : this(id, titel, beschrijving)
+        public BibItems(int id, string titel, string beschrijving, string uitgeverij, int? leeftijd_van, int? leeftijd_tot, string taal) : this(id, titel, beschrijving)
         {
             Uitgeverij = uitgeverij;
             Leeftijd_van = leeftijd_van;
@@ -45,7 +45,7 @@ namespace ItemsLibrary
 
         }
 
-        public BibItems(string titel, string beschrijving, string uitgeverij, int leeftijd_van, int leeftijd_tot, string taal)
+        public BibItems(string titel, string beschrijving, string uitgeverij, int? leeftijd_van, int? leeftijd_tot, string taal)
         {
             Titel = titel;
             Beschrijving = beschrijving;
@@ -74,8 +74,8 @@ namespace ItemsLibrary
                     string titel = Convert.ToString(reader["titel"]);
                     string beschrijving = Convert.ToString(reader["beschrijving"]);
                     string uitgeverij = Convert.ToString(reader["uitgeverij"]);
-                    int leeftijd_van = Convert.ToInt32(reader["leeftijd_van"]);
-                    int leeftijd_tot = Convert.ToInt32(reader["leeftijd_tot"]);
+                    int? leeftijd_van = reader["leeftijd_van"] == DBNull.Value ? null : (int?)Convert.ToInt32(reader["leeftijd_van"]);
+                    int? leeftijd_tot = reader["leeftijd_tot"] == DBNull.Value ? null : (int?)Convert.ToInt32(reader["leeftijd_tot"]);
                     string taal = Convert.ToString(reader["taal"]);
                     emps.Add(new BibItems(id, titel, beschrijving, uitgeverij, leeftijd_van, leeftijd_tot, taal));
                 }
@@ -99,8 +99,8 @@ namespace ItemsLibrary
                 string titel = Convert.ToString(reader["titel"]);
                 string beschrijving = Convert.ToString(reader["beschrijving"]);
                 string uitgeverij = Convert.ToString(reader["uitgeverij"]);
-                int leeftijd_van = Convert.ToInt32(reader["leeftijd_van"]);
-                int leeftijd_tot = Convert.ToInt32(reader["leeftijd_tot"]);
+                int? leeftijd_van = reader["leeftijd_van"] == DBNull.Value ? null : (int?)Convert.ToInt32(reader["leeftijd_van"]);
+                int? leeftijd_tot = reader["leeftijd_tot"] == DBNull.Value ? null : (int?)Convert.ToInt32(reader["leeftijd_tot"]);
                 string taal = Convert.ToString(reader["taal"]);
                 return new BibItems(titel, beschrijving, uitgeverij, leeftijd_van, leeftijd_tot, taal);
             }
@@ -117,17 +117,62 @@ namespace ItemsLibrary
                 string titel = Convert.ToString(reader["titel"]);
                 string beschrijving = Convert.ToString(reader["beschrijving"]);
                 string uitgeverij = Convert.ToString(reader["uitgeverij"]);
-                int leeftijd_van = Convert.ToInt32(reader["leeftijd_van"]);
-                int leeftijd_tot = Convert.ToInt32(reader["leeftijd_tot"]);
+                int? leeftijd_van = reader["leeftijd_van"] == DBNull.Value ? null : (int?)Convert.ToInt32(reader["leeftijd_van"]);
+                int? leeftijd_tot = reader["leeftijd_tot"] == DBNull.Value ? null : (int?)Convert.ToInt32(reader["leeftijd_tot"]);
                 string taal = Convert.ToString(reader["taal"]);
                 return new BibItems(titel, beschrijving, uitgeverij, leeftijd_van, leeftijd_tot, taal);
 
             }
         }
 
+        public void InsertInDb()
+        {
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                conn.Open();
+                SqlCommand comm = new SqlCommand(
+                  "INSERT INTO Item(titel,beschrijving,uitgeverij,leeftijd_van,leeftijd_tot,taal) VALUES(@par1,@par2,@par3,@par4,@par5,@par6)", conn);
+                comm.Parameters.AddWithValue("@par1", Titel);
+                comm.Parameters.AddWithValue("@par2", Beschrijving);
+                if (Leeftijd_van == null)
+                {
+                    comm.Parameters.AddWithValue("@par4", DBNull.Value);
+
+                }
+                else
+                {
+                    comm.Parameters.AddWithValue("@par4", Leeftijd_van);
+                }
+
+                if (Leeftijd_tot == null)
+                {
+                    comm.Parameters.AddWithValue("@par5", DBNull.Value);
+                }
+
+                else
+                {
+                    comm.Parameters.AddWithValue("@par5", Leeftijd_tot);
+                }
+
+                comm.Parameters.AddWithValue("@par3", Uitgeverij);
+                comm.Parameters.AddWithValue("@par6", Taal);
+                comm.ExecuteNonQuery();
+            }
+        }
+        public void DeleteFromDb()
+        {
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                conn.Open();
+                SqlCommand comm = new SqlCommand("DELETE FROM Item WHERE id = @par1", conn);
+                comm.Parameters.AddWithValue("@par1", Id);
+                comm.ExecuteNonQuery();
+            }
+        }
+
         public override string ToString()
         {
-        return $"{Id}: {Titel} {Beschrijving}";
+        return $"{Id}: {Titel}";
 
         }
 

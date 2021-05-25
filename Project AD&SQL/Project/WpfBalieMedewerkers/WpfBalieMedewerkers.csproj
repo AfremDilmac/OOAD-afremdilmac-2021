@@ -80,6 +80,12 @@
     <Compile Include="Insert.xaml.cs">
       <DependentUpon>Insert.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ItemEdit.xaml.cs">
+      <DependentUpon>ItemEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ItemInsert.xaml.cs">
+      <DependentUpon>ItemInsert.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WpfLogin.xaml.cs">
       <DependentUpon>WpfLogin.xaml</DependentUpon>
     </Compile>
@@ -88,6 +94,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Insert.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ItemEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ItemInsert.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
