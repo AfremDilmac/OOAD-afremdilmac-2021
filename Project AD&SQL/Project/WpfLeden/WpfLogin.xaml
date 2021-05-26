@@ -12,18 +12,17 @@
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="130"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="130"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Image Grid.Row="0" Grid.Column="1" Source="download.gif" ></Image>
         <StackPanel Grid.Row="1" Grid.Column="1">
-            <Label Content="Voornaam:" Foreground="White"/>
-            <TextBox x:Name="tbxVoornaam" Height="23" TextWrapping="Wrap" Text=""/>
             <Label Content="Lidnummer:" Foreground="White"/>
-            <TextBox x:Name="tbxLidnummer" Height="23" TextWrapping="Wrap" Text=""/>
-            <Button Background="#FF833636" Foreground="White" BorderBrush="Black" x:Name="btnLogin" Margin="0,20,0,0" Content="Inloggen" FontSize="14" Click="Button_Click"/>
-            <Label Margin="0,20,0,0" x:Name="lblError" VerticalAlignment="Center" HorizontalAlignment="Left" />
+            <TextBox x:Name="tbxLidnummer" Height="23" TextWrapping="Wrap" Text="6487945"/>
+            <Button Background="#FF833636" Foreground="White" BorderBrush="Black" x:Name="btnLogin" Margin="0,20,0,0" Content="Inloggen Met Lidnummer" FontSize="14" Click="Button_Click"/>
+            <TextBlock TextWrapping="WrapWithOverflow" Margin="0,20,0,0" x:Name="lblError" VerticalAlignment="Center" HorizontalAlignment="Left" />
+            <Button Background="#FF833636" Foreground="White" BorderBrush="Black" x:Name="btnLoginZ" Margin="0,20,0,0" Content="Inloggen Zonder Lidnummer" FontSize="14" Click="ButtonZ_Click"/>
         </StackPanel>
 
     </Grid>

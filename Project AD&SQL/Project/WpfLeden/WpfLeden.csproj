@@ -56,6 +56,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Pitems.xaml.cs">
+      <DependentUpon>Pitems.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WpfLogin.xaml.cs">
       <DependentUpon>WpfLogin.xaml</DependentUpon>
     </Compile>
@@ -71,6 +74,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pitems.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WpfLogin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -106,6 +113,14 @@
     <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj">
       <Project>{ba1ad1fb-b881-47b5-908c-56a5ac35f04e}</Project>
       <Name>ClassLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ItemsLibrary\ItemsLibrary.csproj">
+      <Project>{4803a462-312f-48a3-ab10-3552d4189937}</Project>
+      <Name>ItemsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WpfBalieMedewerkers\WpfBalieMedewerkers.csproj">
+      <Project>{8DCA607A-3506-4CE2-A48D-239414176815}</Project>
+      <Name>WpfBalieMedewerkers</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -49,7 +49,7 @@ namespace WpfBalieMedewerkers
                     }
                     else
                     {
-                        lblError.Content = "Gebruikersnaam en/of wachtwoord is fout.";
+                        lblError.Text = "Gebruikersnaam en/of wachtwoord is fout.";
                     }
                 }
             }

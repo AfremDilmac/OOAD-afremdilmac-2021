@@ -23,7 +23,7 @@
             <Label Content="Wachtwoord:" Foreground="White"/>
             <PasswordBox x:Name="tbxWachtwoord" Height="23" Password="kantoor"/>
             <Button Background="#FF833636" Foreground="White" BorderBrush="Black" x:Name="btnLogin" Margin="0,20,0,0" Content="Inloggen" FontSize="14" Click="Button_Click"/>
-            <Label Margin="0,20,0,0" x:Name="lblError" VerticalAlignment="Center" HorizontalAlignment="Left" />
+            <TextBlock TextWrapping="WrapWithOverflow" Margin="0,20,0,0" x:Name="lblError" VerticalAlignment="Center" HorizontalAlignment="Left" />
         </StackPanel>
 
     </Grid>

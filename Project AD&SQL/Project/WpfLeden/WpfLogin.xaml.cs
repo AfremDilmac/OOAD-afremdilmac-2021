@@ -41,15 +41,20 @@ namespace WpfLeden
 
                 if (count == 1)
                 {
-                    lblError.Content = "Welkom";
+                    lblError.Text = "Welkom";
                     MainWindow sW = new MainWindow();
                     sW.Show();
                     this.Close();
                 }
                 else
                 {
-                    lblError.Content = "Gebruikersnaam en/of wachtwoord is fout.";
+                    lblError.Text = "Gebruikersnaam en/of wachtwoord is fout.";
                 }
+        }
+
+        private void ButtonZ_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -1,0 +1,52 @@
+﻿<Page x:Class="WpfLeden.Pitems"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfLeden"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Pitems">
+
+    <Grid Background="#FFA45D5D">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition Width="90"></ColumnDefinition>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="125"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="210"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="5" x:Name="Main" Margin="10,10,-187,10" NavigationUIVisibility="Hidden"/>
+        <Image x:Name="imgHome" Grid.Column="1" HorizontalAlignment="Center" Height="80" Width="200" Grid.Row="0" VerticalAlignment="Center" Source="download.gif"/>
+        <Button Grid.Row="0" Grid.Column="2" x:Name="btnReload" MinWidth="121" MinHeight="34" Margin="0,5"  Background="#FF833636" Content="Reload" Foreground="White" BorderBrush="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Grid.Row="0" Grid.Column="0" x:Name="btnHome" MinWidth="121" MinHeight="34" Margin="0,5"  Background="#FF833636" Content="Home" Foreground="White" BorderBrush="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <ListBox x:Name="lstBox" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Hidden"  Grid.Row="1" Grid.Column="0" Margin="10,10,0,0" HorizontalAlignment="Left" SelectionChanged="lbxResults_SelectionChanged" Background="#FF833636" Foreground="White" BorderBrush="Black" VerticalAlignment="Top" Width="263">
+            <WrapPanel x:Name="wrpPanel" Height="310" Width="520"></WrapPanel>
+        </ListBox>
+        <StackPanel Grid.Row="1" Grid.Column="1" Background="#FFA45D5D">
+            <Label Content="Titel:" FontWeight="Bold" FontSize="14"/>
+            <Label Content="Uitgeverij:" FontWeight="Bold" FontSize="14"/>
+            <Label Content="Leeftijd van:" FontWeight="Bold" FontSize="14"/>
+            <Label Content="Leeftijd tot:" FontWeight="Bold" FontSize="14"/>
+            <Label Content="Taal:" FontWeight="Bold" FontSize="14"/>
+        </StackPanel>
+        <Label Grid.Row="2" Content="Beschrijving:" FontWeight="Bold" FontSize="14"/>
+        <StackPanel Grid.Row="1" Grid.Column="2">
+            <Label Foreground="White" x:Name="lblTitel" FontSize="12" FontWeight="Bold"/>
+            <Label Margin="0,0,0,0" Foreground="White" x:Name="lblUitgeverij" FontSize="12" FontWeight="Bold"/>
+            <Label Margin="0,10,0,0" Foreground="White" x:Name="lblLeeftijdVan" FontSize="12" FontWeight="Bold"/>
+            <Label Margin="0,5,0,0" Foreground="White" x:Name="lblLeeftijdTot" FontSize="12" FontWeight="Bold"/>
+            <Label Margin="0,0,0,0" Foreground="White" x:Name="lblTaal" FontSize="12" FontWeight="Bold"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3">
+            <TextBlock TextWrapping="WrapWithOverflow" Margin="0,0,0,0" Foreground="White" x:Name="lblBeschrijving" FontSize="12" FontWeight="Bold" Height="46"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="3"/>
+    </Grid>
+</Page>
