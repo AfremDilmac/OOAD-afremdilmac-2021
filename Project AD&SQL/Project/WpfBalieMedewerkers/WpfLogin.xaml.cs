@@ -40,7 +40,7 @@ namespace WpfBalieMedewerkers
                 {
                     string code = Convert.ToString(reader["code_pasje"]);
                     string passwoord = Convert.ToString(reader["passwoord"]);
-
+                    //Als gebruikersnaam en wachtwoord = aan een record zijn gaat men de mainwindow openen anders moet men opnieuw proberen.
                     if (tbxGebruikersnaam.Text == code && tbxWachtwoord.Password == passwoord)
                     {
                         MainWindow sW = new MainWindow();

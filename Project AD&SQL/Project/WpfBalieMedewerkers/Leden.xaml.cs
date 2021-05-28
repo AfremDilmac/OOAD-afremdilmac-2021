@@ -63,6 +63,7 @@ namespace WpfBalieMedewerkers
 
         private void lbxResults_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            //Gegevens in lijstbox zetten
             ListBoxItem li = (ListBoxItem)lbxResults.SelectedItem;
             if (li == null) return;
             string id = (string)li.Tag;
@@ -83,7 +84,10 @@ namespace WpfBalieMedewerkers
 
         private void btnHome_Click(object sender, RoutedEventArgs e)
         {
-
+            // Terug naar Mainwinwdow button
+            MainWindow home = new MainWindow();
+            home.Show();
+           
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
@@ -105,6 +109,7 @@ namespace WpfBalieMedewerkers
 
         private void btnModify_Click(object sender, RoutedEventArgs e)
         {
+            //Modify venster openenen en employeeId daarmee doorsturen om correcte record te vinden
             ListBoxItem item = (ListBoxItem)lbxResults.SelectedItem;
             int employeeId = Convert.ToInt32(item.Tag);
             EditWindow editWin = new EditWindow(this, employeeId);

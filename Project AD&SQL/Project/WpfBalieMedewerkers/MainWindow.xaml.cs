@@ -32,6 +32,7 @@ namespace WpfBalieMedewerkers
 
         private void btnClickLid(object sender, RoutedEventArgs e)
         {
+            //Open lid venster
             Main.Content = new Medewerker();
             imgHome.Visibility = Visibility.Hidden;
         }
@@ -44,6 +45,7 @@ namespace WpfBalieMedewerkers
 
         private void btnClickItems(object sender, RoutedEventArgs e)
         {
+            //Open Items venster
             Main.Content = new Items();
             imgHome.Visibility = Visibility.Hidden;
         }

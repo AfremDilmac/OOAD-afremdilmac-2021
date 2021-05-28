@@ -37,6 +37,7 @@ namespace WpfLeden
 
         private void btnClickItems(object sender, RoutedEventArgs e)
         {
+            //Open Item venster
             Main.Content = new Pitems();
             imgHome.Visibility = Visibility.Hidden;
         }

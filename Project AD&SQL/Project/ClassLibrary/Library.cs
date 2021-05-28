@@ -85,6 +85,7 @@ namespace ClassLibrary
         public static Library GetById(string lidnummer) {
             using (SqlConnection conn = new SqlConnection(connString))
             {
+                //Hier krijgt men gegevens via id
                 conn.Open();
                 SqlCommand comm = new SqlCommand("SELECT lidnummer, voornaam, achternaam, geboortedatum, straat, nummer, postcode, gemeente, vervaldatum_lidkaart, gsm FROM Lid WHERE lidnummer = @par1", conn);
                 comm.Parameters.AddWithValue("@par1", lidnummer);
@@ -106,6 +107,7 @@ namespace ClassLibrary
         public void DeleteFromDb() {
             using (SqlConnection conn = new SqlConnection(connString))
             {
+                //Verwijder methode
                 conn.Open();
                 SqlCommand comm = new SqlCommand("DELETE FROM Lid WHERE lidnummer = @par1", conn);
                 comm.Parameters.AddWithValue("@par1", Lidnummer);
@@ -117,6 +119,7 @@ namespace ClassLibrary
         {
             using (SqlConnection conn = new SqlConnection(connString))
             {
+                //Aanpassen methode
                 conn.Open();
                 SqlCommand comm = new SqlCommand(
                     @"UPDATE Lid
@@ -159,6 +162,7 @@ namespace ClassLibrary
         public void InsertInDb() {
             using (SqlConnection conn = new SqlConnection(connString))
             {
+                //Nieuw insert 
                 conn.Open();
                 SqlCommand comm = new SqlCommand(
                   "INSERT INTO Lid(voornaam,achternaam,geboortedatum,straat,nummer,postcode,gemeente,vervaldatum_lidkaart,gsm, lidnummer) VALUES(@par1,@par2,@par3,@par4,@par5,@par6,@par7,@par8, @par9, @par10)", conn);

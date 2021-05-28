@@ -54,6 +54,7 @@ namespace WpfBalieMedewerkers
 
         private void lbxResults_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            //Labels veranderen met gegevens van geselecteerd item in listbox
             ListBoxItem li = (ListBoxItem)lstBox.SelectedItem;
             if (li == null) return;
             int id = (int)li.Tag;
@@ -114,6 +115,13 @@ namespace WpfBalieMedewerkers
             // verwijder werknemer
             emp.DeleteFromDb();
             ReloadEmployees(null);
+        }
+
+        private void btnHome_Click(object sender, RoutedEventArgs e)
+        {
+            // Terug naar Mainwinwdow button
+             MainWindow home = new MainWindow();
+            home.Show();
         }
     }
 }

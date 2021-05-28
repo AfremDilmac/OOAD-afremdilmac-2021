@@ -25,7 +25,7 @@
         <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="5" x:Name="Main" Margin="10,10,-187,10" NavigationUIVisibility="Hidden"/>
         <Image x:Name="imgHome" Grid.Column="1" HorizontalAlignment="Center" Height="80" Width="200" Grid.Row="0" VerticalAlignment="Center" Source="download.gif"/>
         <Button Grid.Row="0" Grid.Column="2" x:Name="btnReload" MinWidth="121" MinHeight="34" Margin="0,5"  Background="#FF833636" Content="Reload" Foreground="White" BorderBrush="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button Grid.Row="0" Grid.Column="0" x:Name="btnHome" MinWidth="121" MinHeight="34" Margin="0,5"  Background="#FF833636" Content="Home" Foreground="White" BorderBrush="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Grid.Row="0" Grid.Column="0" x:Name="btnHome" MinWidth="121" MinHeight="34" Margin="0,5"  Background="#FF833636" Content="Home" Foreground="White" BorderBrush="Black" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnHome_Click"/>
         <ListBox x:Name="lstBox" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Hidden"  Grid.Row="1" Grid.Column="0" Margin="10,10,0,0" HorizontalAlignment="Left" SelectionChanged="lbxResults_SelectionChanged" Background="#FF833636" Foreground="White" BorderBrush="Black" VerticalAlignment="Top" Width="263">
             <WrapPanel x:Name="wrpPanel" Height="310" Width="520"></WrapPanel>
         </ListBox>

@@ -17,7 +17,6 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Button Height="50" Width="50" Grid.Column="1" x:Name="btnHome" MinWidth="100" Margin="10,0,0,0"  Background="#FF833636" Content="Home" Foreground="White" BorderBrush="Black" HorizontalAlignment="Center" Click="btnHome_Click" VerticalAlignment="Center"/>
         <Button Height="50" Width="50" Grid.Row="1" Grid.Column="2" x:Name="btnLeden" MinWidth="100" Margin="10,0,0,0" Content="Leden" Click="btnClickLid" Background="#FF833636" Foreground="White" BorderBrush="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Button Height="50" Width="50" Grid.Row="1" Grid.Column="0" x:Name="btnItems" MinWidth="100" Margin="10,0,0,0" Click="btnClickItems" Background="#FF833636" Content="Items" Foreground="White" BorderBrush="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="3" x:Name="Main" Margin="10,10,10,21" NavigationUIVisibility="Hidden"/>

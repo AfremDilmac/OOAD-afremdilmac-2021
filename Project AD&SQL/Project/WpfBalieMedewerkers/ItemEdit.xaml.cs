@@ -29,6 +29,7 @@ namespace WpfBalieMedewerkers
 
         public ItemEdit(Items test, int id)
         {
+            //Textboxen invullen met gegevens dat geselecteerd zijn in de listbox
             InitializeComponent();
             this.test = test;
             emp = BibItems.FindById(id);
@@ -43,6 +44,7 @@ namespace WpfBalieMedewerkers
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
+            //Opslaan button
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 emp.Beschrijving = txtBeschrijving.Text;

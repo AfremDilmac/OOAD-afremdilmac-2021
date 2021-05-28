@@ -34,6 +34,7 @@ namespace WpfBalieMedewerkers
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
+            //Insert opslaan
             emp.Beschrijving = txtBeschrijving.Text;
             emp.Titel = txtTitel.Text;
             emp.Leeftijd_van = Convert.ToInt32(txtLeeftijdVan.Text);

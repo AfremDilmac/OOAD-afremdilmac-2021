@@ -109,6 +109,7 @@ namespace ItemsLibrary
         public static BibItems GetById(int id) {
             using (SqlConnection conn = new SqlConnection(connString))
             {
+                //Hier krijgt men gegevens via id
                 conn.Open();
                 SqlCommand comm = new SqlCommand("SELECT titel, beschrijving, coverfoto, uitgeverij, leeftijd_van, leeftijd_tot, taal FROM Item WHERE ID = @parID", conn);
                 comm.Parameters.AddWithValue("@parID", id);
@@ -129,6 +130,7 @@ namespace ItemsLibrary
         {
             using (SqlConnection conn = new SqlConnection(connString))
             {
+                //Nieuw insert 
                 conn.Open();
                 SqlCommand comm = new SqlCommand(
                   "INSERT INTO Item(titel,beschrijving,uitgeverij,leeftijd_van,leeftijd_tot,taal) VALUES(@par1,@par2,@par3,@par4,@par5,@par6)", conn);
@@ -160,7 +162,7 @@ namespace ItemsLibrary
             }
         }
         public void DeleteFromDb()
-        {
+        {                //Verwijder methode
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 conn.Open();

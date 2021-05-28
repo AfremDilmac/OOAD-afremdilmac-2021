@@ -31,7 +31,7 @@ namespace WpfLeden
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             SqlConnection sqlCon = new SqlConnection(connString);
-
+                //Hier gaat men kijken of de lidnummer wel echt bestaat en dan mainwindow openen.
                 sqlCon.Open();
                 string query = "SELECT COUNT(1) FROM LID WHERE lidnummer=@lidnummer";
                 SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
@@ -54,7 +54,10 @@ namespace WpfLeden
 
         private void ButtonZ_Click(object sender, RoutedEventArgs e)
         {
-
+            lblError.Text = "Welkom";
+            MainWindow sW = new MainWindow();
+            sW.Show();
+            this.Close();
         }
     }
 }

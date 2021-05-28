@@ -49,6 +49,7 @@ namespace WpfLeden
 
         private void lbxResults_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            //hier gaat men de labels gelijk aan de geselecteerde item in de listbox zetten.
             ListBoxItem li = (ListBoxItem)lstBox.SelectedItem;
             if (li == null) return;
             int id = (int)li.Tag;
@@ -76,6 +77,14 @@ namespace WpfLeden
                 item.IsSelected = selectedId == emp.Id;
                 lstBox.Items.Add(item);
             }
+        }
+
+        private void btnHome_Click(object sender, RoutedEventArgs e)
+        {       
+                //Terug naar Mainwinwdow button
+                MainWindow home = new MainWindow();
+                home.Show();
+        
         }
     }
 }
