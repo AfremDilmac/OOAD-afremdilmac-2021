@@ -1,0 +1,44 @@
+﻿<Window x:Class="WebshopAdmin.Klanten"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebshopAdmin"
+        mc:Ignorable="d"
+        Title="Klanten" Height="450" Width="800">
+    <DockPanel LastChildFill="True" Background="#FF2B6777">
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right" Margin="10,0">
+            <Button x:Name="btnEdit" Content="bewerk" Margin="10,0,10,10" IsEnabled="False" Padding="10,5" Click="BtnEdit_Click" Background="#FFC8D8E4" FontWeight="Bold" FontFamily="Segoe UI"/>
+            <Button x:Name="btnRemove" Content="verwijder" Margin="10,0,10,10" IsEnabled="False" Padding="10,5" Click="BtnRemove_Click" Background="#FFC8D8E4" FontWeight="Bold"/>
+            <Button x:Name="btnNew" Content="nieuw..." Margin="10,0,10,10" Padding="10,5" Click="BtnNew_Click" Background="#FFC8D8E4" FontWeight="Bold"/>
+        </StackPanel>
+        <Grid DockPanel.Dock="Right" Width="250" Margin="20,10" Background="#FF52AB98" Height="178">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Content="Email" FontWeight="Bold" />
+            <Label Grid.Column="1" x:Name="lblEmail" />
+            <Label Grid.Row="1" Content="Geslacht" FontWeight="Bold" />
+            <Label Grid.Row="1" Grid.Column="1" x:Name="lblGender" />
+            <Label Grid.Row="2" Content="Gemeente" FontWeight="Bold" />
+            <Label Grid.Row="2" Grid.Column="1" x:Name="lblGemeente" />
+            <Label Grid.Row="3" Content="Postcode" FontWeight="Bold" />
+            <Label Grid.Row="3" Grid.Column="1" x:Name="lblPostcode" />
+            <Label Grid.Row="4" Content="Nummer" FontWeight="Bold" />
+            <Label Grid.Row="4" Grid.Column="1" x:Name="lblnummer" />
+            <Label Grid.Row="5" Content="Telefoonnummer" FontWeight="Bold" />
+            <Label Grid.Row="5" Grid.Column="1" x:Name="lbltelefoonnummer" />
+        </Grid>
+        <ListBox x:Name="lbxResults" Margin="20,10,0,10" SelectionChanged="LbxResults_SelectionChanged" Background="#FFC8D8E4"/>
+    </DockPanel>
+</Window>
